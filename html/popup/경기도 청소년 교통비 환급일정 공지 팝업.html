@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>경기도 청소년 교통비 지원 관리자 시스템</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../../assets/css/reset.css"/>
+    <link rel="stylesheet" href="../../assets/css/style.css"/>
+    <!-- js -->
+    <script src="../../assets/js/jquery-3.5.1.min.js"></script>
+    <script src="../../assets/js/main.js"></script>
+
+    <style>
+    .modal .modal-content p{font-size:.7rem; color:#666;}
+    mark{font-size:.8rem; line-height:1.3rem;}
+    </style>
+
+</head>
+<body>
+    <div id="modal" class="modal mypage_modal mypage_modal1" style="display:block;">
+        <!-- Modal 내용 -->
+        <div class="modal-content">
+            <!-- 스크롤이 필요할 경우 클래스 modal-content-scroll 추가 -->
+            <div class="modal_top_outer">
+                <div class="modal_top clearfix">
+                    <h1 class="modal_title pay">경기도 청소년 교통비 환급일정 공지</h1>
+                    <img src="../../assets/images/close.svg" alt="닫기버튼" class="close" onclick="closeLayer('modal')">
+                </div>
+            </div>
+            <div class="scroll">
+                <div class="bottom">
+                    <strong style="font-size:1rem;">환급금 지급이 아래와 같이 순차적으로 진행됨을 알려드리며, 신청자분들께서는 아래의 일정을 참고하시어 본인의 환급 예정일을 확인하시기 바랍니다</strong>
+                    <p class="pd0 pt2">
+                    <mark>1) 회원가입을 최종 완료한 신청자 : <span class="en">2020</span>년 8월 21일(금)부터 순차 지급</mark>
+                    <br>
+                    ※ 교통카드, 지역화폐 번호 등록(신청자 본인명의)을 완료하고 “지원금 신청” 클릭까지 정상적으로 완료한 신청자(성남, 시흥, 김포시 거주자의 경우 하기 4)의 일정에 따라 지급 예정)
+                    </p>
+                    <p class="pd0 pt1">
+                    <mark>2) 상반기 정산기간 중 지급율 변경대상자 : <span class="en">2020</span>년 8월 31일(월)부터 순차 지급</mark>
+                    <br>
+                    - 만12세 → 만13세 ( <span class="en">2007.1.1. ~ 6.30.</span> 출생자 )<br>
+                    - 만18세 → 만19세 ( <span class="en">2001.1.1. ~ 6.30.</span> 출생자 )
+                    </p>
+                    <p class="pd0 pt1">
+                    <mark>3) 경기지역화폐 신규 발급신청자 ( 만13세~만23세 ) : <span class="en">2020</span>년 9월 7일(월) 카드발송예정</mark>
+                    <br>
+                    - 지역화폐 카드 수령 (발송 후 약 10일 소요) 후 “경기지역화폐” 신청자 본인 명의로 등록 후 사용가능<br>
+                    ※ 신규 발급신청자 : 회원가입당시 경기지역화폐를 보유하고 있지 않아서 본 홈페이지에서 경기지역화폐 “신규 발급” 버튼을 클릭한 자를 말함
+                    </p>
+                    <p class="pd0 pt1">
+                    <mark>4) 성남/시흥/김포 신청자 : <span class="en">2020</span>년 9월 10일(수)부터 순차 지급 (모바일 지역화폐로 지급)</mark>
+                    </p>
+                    <p class="pd0 pt1">
+                    <mark>5) 비회원신청자</mark>
+                    <br>
+                    - 지역화폐 보유자 : <span class="en">2020</span>년 9월 10일 (수) 부터 순차 지급<br>
+                    - 지역화폐 미보유자 : <span class="en">2020</span>년 9월 14일 (월) 부터 순차 지급
+                    </p>
+                    <p class="pd0 pt1">
+                    <mark>6) 기초생활수급자 : <span class="en">2020</span>년 9월 14일(월)부터 순차 지급</mark>
+                    <br>
+                     ※ 소득 증가로 인한 기초생활 수급자격 박탈여부에 대한 지자체 검토 후 지급 예정
+                    </p>
+                    <p class="pd0 pt1 mb1_5">
+                    <mark>7) 지역화폐 미등록자 : <span class="en">2020</span>년 9월 24일(목)부터 순차지급</mark>
+                    <br>
+                    - 9월 16일 ~ 21일까지 홈페이지에서 경기지역화폐 신규발급 신청이 가능하고, 지역화폐를 보유한 분은 등록이 가능합니다.<br>
+                    - 이 기간 동안 신규발급신청 또는 등록을 하지 않을 경우 환급금 지급이 불가합니다.
+                    </p>
+                    <strong style="color:#10a487; font-size:.8rem;">
+                        ※ 기타사항 : 신청자 중 최초 지급 신청시 오류자(지역화폐 등록 실패 및 미등록, 모바일회원 미가입자 등) 분들은 별도 일정에 따라 순차적으로 처리 예정
+                    </strong>
+                    <div class="btn_area pay mt2">
+                        <button class="green" onclick="closeLayer('modal')">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no" />
+    <title>경기도 청소년 교통비 지원 포탈</title>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <!-- js -->
+    <script src="../../assets/js/jquery-3.5.1.min.js"></script>
+    <script src="../../assets/js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</head>
+
+<body>
+    <div class="skip" title="스킵메뉴">
+        <a href="#contents">본문 바로가기</a>
+    </div>
+    <header class="main_header">
+        <div class="header_inner clearfix">
+            <h1><a href="#" class="logo">
+                    <img src="../../assets/images/logo.svg" alt="로고"></a>
+            </h1>
+            <div class="header_login login">
+                <a href=""><span class="user_name">로그아웃</span></a>
+            </div>
+            <!-- Mobile navigation 시작 -->
+            <div class="ham_nav">
+                <a class="button_container open" id="toggle">
+                    <img src="../../assets/images/open.svg" alt="메뉴열기버튼">
+                </a>
+                <div class="overlay" id="overlay">
+                    <div class="overlay_top">
+                        <h1><a href="#" class="ham_logo">
+                                <img src="../../assets/images/logo.svg" alt="로고"></a>
+                        </h1>
+                        <a class="button_container close" id="toggle">
+                            <img src="../../assets/images/close.svg" alt="메뉴닫기버튼">
+                        </a>
+                    </div>
+                    <div class="overlay_middle flex_sb">
+                        <button>로그인</button>
+                        <button>회원가입</button>
+                    </div>
+                    <div class="container">
+                        <ul class="accordion" id="accordion">
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">서비스 안내</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 1</a></li>
+                                    <li><a href="javascript://">submenu 1</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">게시판</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">교통카드 발급</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">마이페이지</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile navigation 끝 -->
+            <!-- Pc navigation 시작 -->
+            <div class="pc_nav">
+                <nav>
+                    <ul class="clearfix">
+                        <li class="dropdown">
+                            <a href="">서비스 안내</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">게시판</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">교통카드 발급</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">마이페이지</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Pc navigation 끝 -->
+        </div>
+    </header>
+    <!-- <div id="contents" tabIndex="0"></div> -->
+    <section class="sub_section" id="contents">
+        <div class="terms_area">
+            <!-- 약관동의부분 -->
+
+            <!-- 2022-05-31 수정 -->
+            <div class="step-box">
+                <!-- step단계에 따라 class명 변경 step1, step2... -->
+                <div class="step-state step1">
+                    <ul>
+                        <!--li갯수에 따라 width:%조절 -->
+                        <li style="width:25%">
+                            <p>약관동의</p>
+                        </li>
+                        <li style="width:25%">
+                            <p>본인인증</p>
+                        </li>
+                        <li style="width:25%">
+                            <p>정보입력</p>
+                        </li>
+                        <li style="width:25%">
+                            <p>가입완료</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //2022-05-31 수정 -->
+
+            <div class="form_box">
+                <h2 class="title">약관동의</h2>
+                <p class="title_txt">약관동의 후 다음을 눌러주세요.</p>
+                <form action="" method="" action="">
+                    <div class="form_area nonemg">
+                        <div class="chk_box chk_all_box lbtn green">
+                            <span class="input_chk">
+                                <input type="checkbox" id="chk_all" name="chk_all" class="">
+                                <label for="chk_all" class="chk_all">모든 이용약관에 동의 합니다.</label>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="terms_box">
+                        <div class="form_area nonepd">
+                            <div class="chk_box lbtn white">
+                                <span class="input_chk">
+                                    <input type="checkbox" id="termsService1" name="chk_one" class="">
+                                    <label for="termsService1"><span class="necessary">&lpar;필수&rpar;</span></label>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="terms">
+                            <p>
+                                제1조 (목적)<br>
+                                본 약관은 주식회사 GYTS (이하 “회사”라 합니다)이 운영하는 전기자동차 충전 서비스인 에스에스차져(전기차 충전소 ) (이하 “서비스”라 합니다)를 이용함에 있어 회사와 회원 간의 권리와 의무, 책임사항 및 기타 필요한 사항을 규정함을 목적으로 합니다.<br>
+                                제2조 (용어의 정의)<br>
+                                ① ”GYTS"라 함은 회사가 회원에게 제공하는 제9조 소정의 서비스를 의미합니다.<br>
+                                ② "회원"이라 함은 서비스를 이용하기 위하여 회사에 개인정보를 제공하고 회원등록을 한 자로서 회사로부터 서비스 관련 정보를 제공받고 서비스를 이용할 수 있는 자격을 보유한 자를 말합니다<br>
+                                (약관내용 필요)<br>
+                                제3조 (용어의 정의)<br>
+                                ① ”GYTS"라 함은 회사가 회원에게 제공하는 제9조 소정의 서비스를 의미합니다.<br>
+                                제1조 (목적)<br>
+                                본 약관은 주식회사 GYTS (이하 “회사”라 합니다)이 운영하는 전기자동차 충전 서비스인 에스에스차져(전기차 충전소 ) (이하 “서비스”라 합니다)를 이용함에 있어 회사와 회원 간의 권리와 의무, 책임사항 및 기타 필요한 사항을 규정함을 목적으로 합니다.<br>
+                                제2조 (용어의 정의)<br>
+                                ① ”GYTS"라 함은 회사가 회원에게 제공하는 제9조 소정의 서비스를 의미합니다.<br>
+                                ② "회원"이라 함은 서비스를 이용하기 위하여 회사에 개인정보를 제공하고 회원등록을 한 자로서 회사로부터 서비스 관련 정보를 제공받고 서비스를 이용할 수 있는 자격
+                            </p>
+                        </div>
+                    </div>
+                    <div class="terms_box">
+                        <div class="form_area nonepd">
+                            <div class="chk_box lbtn white">
+                                <span class="input_chk">
+                                    <input type="checkbox" id="termsService2" name="chk_one" class="">
+                                    <label for="termsService2"><span class="chk_btn"></span>개인정보 수집 및 이용에 대한 안내 <span class="necessary">&lpar;필수&rpar;</span></label>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="terms" tabindex="0">
+                            <p>
+                                제1조 (목적)<br>
+                                본 약관은 주식회사 GYTS (이하 “회사”라 합니다)이 운영하는 전기자동차 충전 서비스인 에스에스차져(전기차 충전소 ) (이하 “서비스”라 합니다)를 이용함에 있어 회사와 회원 간의 권리와 의무, 책임사항 및 기타 필요한 사항을 규정함을 목적으로 합니다.<br>
+                                제2조 (용어의 정의)<br>
+                                ① ”GYTS"라 함은 회사가 회원에게 제공하는 제9조 소정의 서비스를 의미합니다.<br>
+                                ② "회원"이라 함은 서비스를 이용하기 위하여 회사에 개인정보를 제공하고 회원등록을 한 자로서 회사로부터 서비스 관련 정보를 제공받고 서비스를 이용할 수 있는 자격을 보유한 자를 말합니다<br>
+                                (약관내용 필요)<br>
+                                제3조 (용어의 정의)<br>
+                                ① ”GYTS"라 함은 회사가 회원에게 제공하는 제9조 소정의 서비스를 의미합니다.<br>
+                                제1조 (목적)<br>
+                                본 약관은 주식회사 GYTS (이하 “회사”라 합니다)이 운영하는 전기자동차 충전 서비스인 에스에스차져(전기차 충전소 ) (이하 “서비스”라 합니다)를 이용함에 있어 회사와 회원 간의 권리와 의무, 책임사항 및 기타 필요한 사항을 규정함을 목적으로 합니다.<br>
+                                제2조 (용어의 정의)<br>
+                                ① ”GYTS"라 함은 회사가 회원에게 제공하는 제9조 소정의 서비스를 의미합니다.<br>
+                                ② "회원"이라 함은 서비스를 이용하기 위하여 회사에 개인정보를 제공하고 회원등록을 한 자로서 회사로부터 서비스 관련 정보를 제공받고 서비스를 이용할 수 있는 자격
+                            </p>
+                        </div>
+                    </div>
+                    <div class="terms_box">
+                        <div class="form_area nonepd">
+                            <div class="chk_box lbtn white">
+                                <span class="input_chk">
+                                    <input type="checkbox" id="termsService3" name="chk_one" class="">
+                                    <label for="termsService3"><span class="chk_btn"></span>웹 스크래핑 이용에 대한 안내 <span class="necessary">&lpar;필수&rpar;</span></label>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="terms" tabindex="0">
+                            <p>
+                                제1조 (목적)<br>
+                                본 약관은 주식회사 GYTS (이하 “회사”라 합니다)이 운영하는 전기자동차 충전 서비스인 에스에스차져(전기차 충전소 ) (이하 “서비스”라 합니다)를 이용함에 있어 회사와 회원 간의 권리와 의무, 책임사항 및 기타 필요한 사항을 규정함을 목적으로 합니다.<br>
+                                제2조 (용어의 정의)<br>
+                                ① ”GYTS"라 함은 회사가 회원에게 제공하는 제9조 소정의 서비스를 의미합니다.<br>
+                                ② "회원"이라 함은 서비스를 이용하기 위하여 회사에 개인정보를 제공하고 회원등록을 한 자로서 회사로부터 서비스 관련 정보를 제공받고 서비스를 이용할 수 있는 자격을 보유한 자를 말합니다<br>
+                                (약관내용 필요)<br>
+                                제3조 (용어의 정의)<br>
+                                ① ”GYTS"라 함은 회사가 회원에게 제공하는 제9조 소정의 서비스를 의미합니다.<br>
+                                제1조 (목적)<br>
+                                본 약관은 주식회사 GYTS (이하 “회사”라 합니다)이 운영하는 전기자동차 충전 서비스인 에스에스차져(전기차 충전소 ) (이하 “서비스”라 합니다)를 이용함에 있어 회사와 회원 간의 권리와 의무, 책임사항 및 기타 필요한 사항을 규정함을 목적으로 합니다.<br>
+                                제2조 (용어의 정의)<br>
+                                ① ”GYTS"라 함은 회사가 회원에게 제공하는 제9조 소정의 서비스를 의미합니다.<br>
+                                ② "회원"이라 함은 서비스를 이용하기 위하여 회사에 개인정보를 제공하고 회원등록을 한 자로서 회사로부터 서비스 관련 정보를 제공받고 서비스를 이용할 수 있는 자격
+                            </p>
+                        </div>
+                    </div>
+                    <div class="btn_area">
+                        <button class="btn_2 blue">취소</button>
+                        <button type="button" class="btn_2 green terms_next">다음</button>
+                    </div>
+                </form>
+            </div>
+            <!-- 약관동의부분끝 -->
+        </div>
+        <div class="confirm_area">
+            <!-- 본인인증부분시작 -->
+
+            <!-- 2022-05-31 수정 -->
+            <div class="step-box">
+                <!-- step단계에 따라 class명 변경 step1, step2... -->
+                <div class="step-state step2">
+                    <ul>
+                        <!--li갯수에 따라 width:%조절 -->
+                        <li style="width:25%">
+                            <p>약관동의</p>
+                        </li>
+                        <li style="width:25%">
+                            <p>본인인증</p>
+                        </li>
+                        <li style="width:25%">
+                            <p>정보입력</p>
+                        </li>
+                        <li style="width:25%">
+                            <p>가입완료</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //2022-05-31 수정 -->
+
+            <div class="form_box">
+                <h2 class="title">본인인증</h2>
+                <p class="title_txt">
+                    <!-- 2021.12.수정 -->
+                    경기도 거주 확인과 지원금 신청 대상자의 연령검증을 위해, 
+                    가입 시 인증서가 필요합니다.<br>
+                    <!-- 2021.12.15.수정 -->
+                    인증서 종류 : 간편인증서(카카오톡/통신사 PASS/삼성패스/KB모바일/페이코) 및 공동·금융 인증서<br>
+                    <!-- //2021.12.15.수정 -->
+                    <!-- //2021.12.수정 -->
+                </p>
+                <form action="" method="" action="">
+                    <div class="form_area warning_mg">
+                        <h3 class="title">
+                            <label for="name" class="star">이름<span class="compulsory_txt">필수입력항목</span></label>
+                        </h3>
+                        <div>
+                            <input type="text" id="name" title="이름" placeholder="이름을 입력하세요" class="ko">
+                            <button type="button" class="outer_button">
+                                <!-- class명으로 warning붙으면 경고박스로 변경-->
+                            <a href=""><img class="delete" src="../../assets/images/delete.svg" alt="이름 지우기"></a>
+                            </button>
+                        </div>
+                        <div class="warning_box">
+                            <p class="warning"></p>
+                            <!-- 경고메세지 있을 시 p태그 안에 삽입 -->
+                        </div>
+                    </div>
+                    <div class="form_area warning_mg">
+                        <h3 class="title">
+                            <label for="id_num2" class="star">주민등록 번호<span class="compulsory_txt">필수입력항목</span></label>
+                        </h3>
+                        <div class="box_2_box">
+                            <input type="text" id="id_num2" title="주민등록 번호 앞자리" class="inputs box_2" placeholder="앞자리" maxlength="6" pattern="[0-9]*">
+                            <input type="text" title="주민등록 번호 뒷자리" class="inputs box_2 bar" placeholder="뒷자리" maxlength="7" pattern="[0-9]*">
+                            <span></span>
+                        </div>
+                        <div class="warning_box">
+                            <p class="warning"></p>
+                        </div>
+                    </div>
+                    <div class="form_area warning_mg">
+                        <h3 class="title">
+                            <label for="" class="star">휴대폰 번호<span class="compulsory_txt">필수입력항목</span></label>
+                            <span style="display:block; font-weight:normal;">(본인 또는 대리인 등의 인증이 가능한 휴대폰)</span>
+                        </h3>
+                        <div class="flex_s">
+                            <div class="input_chk" style="margin-right:20%;">
+                                <input type="radio" id="folder1" name="folder" class="" title="본인 인증 휴대폰"/>
+                                <label for="folder1" class="chk">
+                                    본인
+                                </label>
+                            </div>
+                            <div class="input_chk">
+                                <input type="radio" id="folder2" name="folder" class="" title="대리인 인증 휴대폰"/>
+                                <label for="folder2" class="chk">
+                                    대리인
+                                </label>
+                            </div>
+                        </div>
+                        <div class="check_phone warning">
+                            <div>
+                                <input type="text" id="" title="열한자리 휴대폰 번호만 입력해 주세요" class="" placeholder="휴대폰 번호를 입력하세요." maxlength="11">
+                                <button type="button" class="green">인증번호 발송</button>
+                            </div>
+                            <div>
+                                <input type="text" title="인증번호 6자리 숫자를 입력해 주세요" class="" placeholder="인증번호 6자리 숫자." maxlength="6">
+                                <span>03:00</span>
+                                <button type="button" class="grey">인증 확인</button>
+                                <!-- 인증완료되면 <button> class="grey" -> class="green"으로 변경  -->
+                            </div>
+                        </div>
+                        <div class="warning_box">
+                            <p class="area_info">인증완료</p>
+                            <!-- 완료메세지 있을 시 p태그 안에 삽입 -->
+                        </div>
+                    </div>
+                    <div class="bottom_promotion mt0 mb2">
+                        <p class="bullet">
+                            ※ 청소년 회원 : 청소년 본인의 휴대폰, 휴대폰이 없는 경우 인증이 가능한 대리인의 휴대폰 번호로 인증 가능
+                        </p>
+                        <p class="bullet">
+                            ※ 대리인 회원 : 대리인 본인 휴대폰 번호만 인증 가능
+                        </p>
+                    </div>
+                    <div class="form_area">
+                        <div class="input_chk">
+                            <input type="checkbox" id="chk" title="대리인 인증서로 인증시 체크해 주세요" name="" class="parentchk" />
+                            <label for="chk" class="chk">대리인 인증서로 인증 시</label>
+                        </div>
+                    </div>
+                    <!-- 법정대리인 동의시 나오는 부분 시작-->
+                    <div class="blocknone">
+                        <div class="bottom_promotion mt0 mb2">
+                            <p class="bullet">
+                                ※ 대리인 : 부모님 및 청소년이 지정한 인증서 소유자
+                            </p>
+                            <p class="bullet">
+                                ※ 본인 인증서의 경우 체크하지 않으셔도 됩니다.
+                            </p>
+                        </div>
+                        <div class="form_area warning_mg">
+                            <h3 class="title">
+                                <label for="pa_name" class="star">대리인 이름</label>
+                            </h3>
+                            <div>
+                                <input type="text" id="pa_name" title="대리인 이름" class="pa_name" placeholder="이름을 입력하세요">
+                            </div>
+                            <div class="warning_box">
+                                <p class="warning"></p>
+                            </div>
+                        </div>
+                        <div class="form_area warning_mg">
+                            <h3 class="title">
+                                <label for="pa_id_num" class="star">대리인 주민등록 번호</label>
+                            </h3>
+                            <div class="box_2_box">
+                                <input type="text" id="pa_id_num" title="주민등록 번호 앞자리" class="inputs box_2" placeholder="앞자리" maxlength="6">
+                                <input type="text" title="주민등록 번호 뒷자리" class="inputs box_2 bar" placeholder="뒷자리" maxlength="7">
+                                <span></span>
+                            </div>
+                            <div class="warning_box">
+                                <p class="warning"></p>
+                            </div>
+                        </div>
+                        <div class="form_area warning_mg">
+                            <h3 class="title">
+                                <label for="tel2" class="star">대리인 휴대폰 번호<span class="compulsory_txt">필수입력항목</span></label>
+                            </h3>
+                            <div class="check_phone warning">
+                                <div>
+                                    <input type="text" id="tel2" title="열한자리 휴대폰 번호만 입력해 주세요" class="" placeholder="휴대폰 번호를 입력하세요." maxlength="11">
+                                    <button type="button" class="green">인증번호 발송</button>
+                                </div>
+                                <div>
+                                    <input type="text" title="인증번호 6자리 숫자를 입력해 주세요" class="" placeholder="인증번호 6자리 숫자." maxlength="6">
+                                    <span>03:00</span>
+                                    <button type="button" class="grey">인증 확인</button>
+                                    <!-- 인증완료되면 <button> class="grey" -> class="green"으로 변경  -->
+                                </div>
+                            </div>
+                            <div class="warning_box">
+                                <p class="area_info">인증완료</p>
+                                <!-- 완료메세지 있을 시 p태그 안에 삽입 -->
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- //법정대리인 동의시 나오는 부분 끝-->
+                    <div class="form_area">
+                        <h3 class="title">
+                            <label for="area_select1" class="star">지역 선택</label>
+                        </h3>
+                        <div>
+                            <select id="area_select1" class="" title="지역 선택 리스트">
+                                <option value="가평군">가평군</option>
+                                <option value="고양시">고양시</option>
+                                <option value="과천시">과천시</option>
+                            </select>
+                        </div>
+                    </div>
+                    <a href="#" id="" class=""><button type="button" class="lbtn green join_lbtn lbtn_change" onclick="">인증하기</button></a>
+                    <div class="warning_box">
+                        <p class="area_info">인증완료</p>
+                    </div>
+                    <!-- button에 change클래스 추가되면 비활성화 됩니다 -->
+
+                    <!-- 지역선택시 나오는 주의문구부분 시작 -->
+
+                    <!-- 2021.12.수정 -->
+                    <!-- 성남,시흥,김포시 시작-->
+                    <div class="bottom_promotion mb2">
+                        <p class="bullet">
+                            <!-- 2021.12.15.수정 -->
+                            성남, 시흥, 김포는 모바일 지역화폐로 등록 가능하며, 등록 시 본인 명의(대리인) 휴대폰, 이름, 생년월일이 일치해야 합니다.
+                            <!-- //2021.12.15.수정 -->
+                        </p>
+                    </div>
+                    <!-- //성남,시흥,김포시 끝-->
+                    <!-- //2021.12.수정 -->
+
+                    <!-- 김포시 시작-->
+                    <div class="bottom_promotion mb2">
+                        <p class="bullet">
+                            김포시 &colon; 반드시 본인 명의의 모바일 앱 &lpar;착한페이&rpar;에 회원가입을 해야 지원금 지급이 가능합니다. 미 가입 시 지급이 불가합니다.
+                        </p>
+                    </div>
+                    <!-- //김포시 끝-->
+                    <!-- 성남시흥 시작-->
+                    <div class="bottom_promotion mt0 mb2">
+                        <p class="bullet">
+                            성남시&comma; 시흥시 &colon; 반드시 본인 명의의 모바일 앱 &lpar;<span class="en">Chak</span>&rpar; 에 회원가입을 해야 지원금 지급이 가능합니다. 미 가입 시 지급이 불가합니다.
+                        </p>
+                    </div>
+                    <!-- //성남시흥 끝-->
+                    <!-- //지역선택시 나오는 주의문구부분 끝 -->
+                    
+                    <!-- 2021.12.수정 -->
+                    <div class="form_area warning_mg">
+                        <h3 class="title">
+                            <label for="name" class="star">인증수단 선택<span class="compulsory_txt">필수입력항목</span></label>
+                        </h3>
+                        <!-- 2021.12.15.수정 -->
+                        <p class="h_detail">간편인증 및 공동·금융 인증서 중 한 가지를 선택해주세요.</p>
+                        <!-- PC 버튼 -->
+                        <div class="btn_lbtn pc">
+                            <button type="button" class="blue_light2" onclick="openLayer('modalSimple')">
+                                <span>간편인증</span>
+                                <span class="logo_list_btn">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </button>
+                            <button type="button" class="blue_light1 logo_list">
+                                공동 ·금융 인증서
+                            </button>
+                        </div>
+                        <!-- 2021.12.15.수정 -->
+                        <!-- //PC 버튼 -->
+                        <!-- mobile 버튼 -->
+                        <div class="btn_lbtn mo">
+                            <button type="button" class="blue_light1">
+                                인증수단 선택하기
+                            </button>
+                        </div>
+                        <!-- //mobile 버튼 -->
+                        <div class="warning_box">
+                            <p class="area_info">인증되었습니다.</p>
+                            <!-- 경고메세지 있을 시 p태그 안에 삽입 -->
+                        </div>
+                    </div>
+                    <!-- //2021.12.수정 -->
+
+                    <div class="btn_area">
+                        <button type="button" class="btn_2 blue">취소</button>
+                        <button type="button" class="btn_2 green confirm_next">다음</button>
+                    </div>
+
+
+                    <!-- 2021.12.수정 -->
+
+                    <!-- 간편인증 메인팝업 -->
+                    <div id="modalSimple" class="modal mypage_modal mypage_modal1 simple" style="display:block;">
+                        <!-- Modal 내용 -->
+                        <div class="modal-content">
+                            <section class="title">
+                                <h4>간편인증</h4>
+                                <img src="../../assets/images/logo.svg" alt="경기도청소년교통비지원포털 로고">
+                            </section>
+                            <section class="scroll">
+                                <ul class="type_list">
+                                    <li>
+                                        <label for="type_01" style="height:5rem;">
+                                            <span class="icon" style="background-image: url(../../assets/images/type_kakao_logo.png);"></span>
+                                            <span class="text">카카오톡</span>
+                                        </label>
+                                        <input type="radio" id="type_01" name="type">
+                                    </li>
+                                    <li>
+                                        <label for="type_02" style="height:5rem;">
+                                            <span class="icon" style="background-image: url(../../assets/images/type_pass_logo.png);"></span>
+                                            <span class="text">
+                                                통신사패스<br>
+                                                (SKT, KT, LGU+)
+                                            </span>
+                                        </label>
+                                        <input type="radio" id="type_02" name="type">
+                                    </li>
+                                    <li>
+                                        <label for="type_03" style="height:5rem;">
+                                            <span class="icon" style="background-image: url(../../assets/images/type_samsungpass_logo.png);"></span>
+                                            <span class="text">삼성패스</span>
+                                        </label>
+                                        <input type="radio" id="type_03" name="type">
+                                    </li>
+                                    <li>
+                                        <label for="type_04" style="height:5rem;">
+                                            <span class="icon" style="background-image: url(../../assets/images/type_kb_logo.png);"></span>
+                                            <span class="text">
+                                                KB모바일<br>
+                                                인증서
+                                            </span>
+                                        </label>
+                                        <input type="radio" id="type_04" name="type">
+                                    </li>
+                                    <li>
+                                        <label for="type_05" style="height:5rem;">
+                                            <span class="icon" style="background-image: url(../../assets/images/type_payco_logo.png);"></span>
+                                            <span class="text">페이코</span>
+                                        </label>
+                                        <input type="radio" id="type_05" name="type">
+                                    </li>
+                                </ul>
+                                <div class="content_sec">
+                                    <h5>정보 입력</h5>
+                                    <div class="form_area">
+                                        <h3 class="title">
+                                            <label for="name1" class="star">이름</label>
+                                        </h3>
+                                        <div>
+                                            <input type="text" id="name1" title="본인 이름" class="" placeholder="이름을 입력하세요">
+                                        </div>
+                                    </div>
+                                    <div class="form_area">
+                                        <h3 class="title">
+                                            <label for="id_num1" class="star">주민등록 번호</label>
+                                        </h3>
+                                        <div class="box_2_box" style="display:flex; align-items: center; justify-content: space-between;">
+                                            <input type="text" id="id_num1" title="주민등록 번호 앞자리" class="box_2" placeholder="생년월일8자리" maxlength="8" style="width:47%;">
+                                            <div class="iine_bar"></div>
+                                            <div class="num_dot_box" style="width:47%;">
+                                                <input type="text" title="주민등록 번호 뒷자리 한자리" class="box_2 bar" placeholder="" maxlength="1">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form_area warning_mg">
+                                        <h3 class="title">
+                                            <label for="tel1" class="star">휴대폰 번호</label>
+                                        </h3>
+                                        <input type="text" id="tel1" title="본인 휴대폰 번호" class="" placeholder="휴대폰 번호를 입력하세요." maxlength="11">
+                                    </div>
+                                </div>
+                                <div class="content_sec">
+                                    <h5>서비스 이용에 대한 동의</h5>
+                                    <ul class="terms_list">
+                                        <li>
+                                            <input type="checkbox" id="terms" name="chk_all">
+                                            <span>
+                                                <label for="terms">전체동의</label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="terms1" name="chk_one">
+                                            <span>
+                                                <label for="terms1">제3자 정보제공동의(필수)</label>
+                                                <a href="#" onclick="openLayer('modalDetail1')">자세히보기</a>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="terms2" name="chk_one">
+                                            <span>
+                                                <label for="terms2">고유식별정보처리동의(필수)</label>
+                                                <a href="#" onclick="openLayer('modalDetail2')">자세히보기</a>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="modal_btn">
+                                    <button class="madal_btn modal_btn2 blue" onclick="closeLayer('modalSimple')">닫기</button>
+                                    <button type="button" class="madal_btn modal_btn2 green">인증요청</button>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <!-- //간편인증 메인팝업 -->
+
+                    <!-- 제3자정보제공동의자세히보기 -->
+                    <div id="modalDetail1" class="modal mypage_modal mypage_modal1 simple">
+                        <!-- Modal 내용 -->
+                        <div class="modal-content">
+                            <section class="title">
+                                <h4>간편인증</h4>
+                                <img src="../../assets/images/logo.svg" alt="경기도청소년교통비지원포털 로고">
+                            </section>
+                            <section class="scroll">
+                                <div class="content_sec">
+                                    <h5>제3자 정보제공동의 (필수)</h5>
+                                    <p style="padding:0;">경기도 청소년 교통비 지원 포털은 정보주체의 동의, 법률의 특별한 규정 등은 개인정보 보호법 제17조 및 제18조에 해당하는 경우에만 개인정보를 제3자에게 제공합니다.</p>
+                                    <br>
+                                    <ol class="depth_list depth_1">
+                                        <li>
+                                            <span>가.</span>
+                                            용어정의
+                                            <ol class="depth_2">
+                                                <li>
+                                                    <span>1.</span>
+                                                    <span class="en"></span>CI(연계정보) : 특정 개인의 식별을 위한 범용값
+                                                </li>
+                                                <li>
+                                                    <span>2.</span>
+                                                    인증사업자 : 카카오, <em class="en">pass</em>, 삼성<em class="en">pass</em>, <em class="en">KB</em>, <em class="en">payco</em> 등 전자서명 서비스를 제공하는 사업자.
+                                                </li>
+                                                <li>
+                                                    <span>3.</span>
+                                                    본인확인기관 : 코리아크레딧뷰로(<span class="en"></span>KCB), 본인확인 서비스를 제공하는 사업자
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            <span>나.</span>
+                                            제3자 제공에 관한 사항
+                                            <ol class="depth_2">
+                                                <li>
+                                                    <span>1.</span>
+                                                    개인정보를 제공받는 자 : 인증사업자, 본인확인기관
+                                                </li>
+                                                <li>
+                                                    <span>2.</span>
+                                                    제공받는 자의 개인정보 이용목적 : 간편인증 시 본인확인 또는 전자서명
+                                                </li>
+                                                <li>
+                                                    <span>3.</span>
+                                                    제공하는 개인정보 항목 : 주민등록번호 또는 생년월일, 성명, 휴대폰번호  
+                                                </li>
+                                                <li>
+                                                    <span>4.</span>
+                                                    제공받는 자의 보유/이용기간 : 본인확인 후 즉시 파기 
+                                                </li>
+                                            </ol>
+                                            <br>
+                                            위 개인정보의 제3자 제공 동의를 거부할 수 있습니다. 다만, 경기도 청소년 교통비 지원 포털 이용 목적에 따른 서비스의 제한이 있을 수 있습니다
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div class="btn_area">
+                                    <button class="blue" onclick="closeLayer('modalDetail1')">확인</button>
+                                </div>
+
+                            </section>
+                        </div>
+                    </div>
+                    <!-- //제3자정보제공동의자세히보기 -->
+
+                    <!-- 고유식별정보처리동의자세히보기 -->
+                    <div id="modalDetail2" class="modal mypage_modal mypage_modal1 simple">
+                        <!-- Modal 내용 -->
+                        <div class="modal-content">
+                            <section class="title">
+                                <h4>간편인증</h4>
+                                <img src="../../assets/images/logo.svg" alt="경기도청소년교통비지원포털 로고">
+                            </section>
+                            <section class="scroll">
+                                <div class="content_sec">
+                                    <h5>고유식별정보처리동의 (필수)</h5>
+                                    <p style="padding:0;">경기도 청소년 교통비 지원 포털은 정보주체의 동의, 전자정부법 제9조 3항에 따른 동법 시행령 제90조, 개인정보 보호법 제17조 및 제18조에 해당하는 경우에 아래와 같이 고유식별정보 처리(수집이용 및 제3자 제공)를 하고 있습니다.</p>
+                                    <br>
+                                    <ol class="depth_list depth_1">
+                                        <li>
+                                            <span>1.</span>
+                                            수집 및 이용 목적 : 회원가입, 지원금 신청(경기도 거주 인증), 자녀 추가등의 경기도 청소년 교통비 지원 포털 서비스 이용 본인 인증 시
+                                        </li>
+                                        <li>
+                                            <span>2.</span>
+                                            수집 항목 : 주민등록번호 또는 생년월일, 성명, 휴대폰번호
+                                        </li>
+                                        <li>
+                                            <span>3.</span>
+                                            고유식별정보의 보유 및 이용기간 : 3년 보유 후 삭제
+                                        </li>
+                                    </ol>
+                                    <p style="padding:0; margin-top:1rem;">위 고유식별번호 처리에 관한 사항에 대한 동의를 거부할 수 있습니다. 다만, 관련 서비스 이용 등 목적에 따른 혜택의 제한이 있을 수 있습니다.</p>
+                                </div>
+                                <div class="btn_area">
+                                    <button class="blue" onclick="closeLayer('modalDetail2')">확인</button>
+                                </div>
+
+                            </section>
+                        </div>
+                    </div>
+                    <!-- //고유식별정보처리동의자세히보기 -->
+
+                    <!-- 간편인증업체별 팝업 -->
+                    <div id="modalType" class="modal mypage_modal mypage_modal1 simple">
+                        <!-- Modal 내용 -->
+                        <div class="modal-content">
+                            <section class="title">
+                                <h4>간편인증</h4>
+                                <img src="../../assets/images/logo.svg" alt="경기도청소년교통비지원포털 로고">
+                            </section>
+                            <section class="scroll">
+
+                                <!-- 카카오톡 -->
+                                <h5 class="type_title">인증요청 <span>카카오톡 인증서</span></h5>
+                                <p style="padding:0; color:dimgrey;">
+                                    휴대폰으로 인증요청이 전송되었습니다.<br>
+                                    앱으로 이동하여 인증을 마친 후 아래 ‘인증완료‘ 버튼을 클릭해주세요.
+                                </p>
+                                <ul class="type_step">
+                                    <li>
+                                        <div class="bg">
+                                            <img src="../../assets/images/type_kakao_logo.png" alt="카카오톡앱">
+                                        </div>
+                                        <dl>
+                                            <dt><em class="en">Step 01</em></dt>
+                                            <dd>
+                                                앱에서<br>
+                                                인증 요청 메시지 확인
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <div class="bg"></div>
+                                        <dl>
+                                            <dt><em class="en">Step 02</em></dt>
+                                            <dd>
+                                                인증 진행<br>
+                                                (비밀번호 등)
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <div class="bg"></div>
+                                        <dl>
+                                            <dt><em class="en">Step 03</em></dt>
+                                            <dd>
+                                                인증 완료 후<br>
+                                                하단의 인증 완료 클릭
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                                <div class="bottom_promotion popup">
+                                    문제 발생 시 조치방법<br><br>
+                                    ① 카카오 인증서 이용에 문제가 있는 경우, <a href="#">[고객센터 도움말]</a>에서 해결 방법을 찾아보세요.<br>
+                                    ② 문제가 지속되면 <a href="#">[고객센터 문의하기]</a> 또는 <a href="#">[상담톡 채널]</a> 채팅하기를 통해 문의해주세요.
+                                </div>
+                                <!-- //카카오톡 -->
+
+                                <!-- 통신사패스 -->
+                                <h5 class="type_title">인증요청 <span>통신사 패스 (<span class="en">SKT, KT, LGU+</span>)</h5>
+                                <p style="padding:0; color:dimgrey;">
+                                    휴대폰으로 인증요청이 전송되었습니다.<br>
+                                    앱으로 이동하여 인증을 마친 후 아래 ‘인증완료‘ 버튼을 클릭해주세요.
+                                </p>
+                                <ul class="type_step">
+                                    <li>
+                                        <div class="bg">
+                                            <img src="../../assets/images/type_pass_logo.png" alt="통신사패스 앱">
+                                        </div>
+                                        <dl>
+                                            <dt><em class="en">Step 01</em></dt>
+                                            <dd>
+                                                앱에서<br>
+                                                인증 요청 메시지 확인
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <div class="bg"></div>
+                                        <dl>
+                                            <dt><em class="en">Step 02</em></dt>
+                                            <dd>
+                                                인증 진행<br>
+                                                (비밀번호 등)
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <div class="bg"></div>
+                                        <dl>
+                                            <dt><em class="en">Step 03</em></dt>
+                                            <dd>
+                                                인증 완료 후<br>
+                                                하단의 인증 완료 클릭
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                                <div class="bottom_promotion popup">
+                                    인증요청(알림)이 휴대폰으로 오지 않았다면 아래 순서로 확인해 주세요.
+                                    <br><br>
+                                    ① [PASS 앱 실행 > 홈 화면 또는 인증서 메뉴] 에서 인증 요청 내용을 확인할 수 있습니다.<br>
+                                    ② PASS 앱 설치 확인 및 알림 수신동의가 되어 있는지 확인해 주세요.<br>
+                                    ③ 문제가 계속된다면, <strong style="color:tomato">[PASS 인증서 고객센터 1800-4273]</strong> 로 연락해 주세요.
+                                </div>
+                                <!-- //통신사패스 -->
+
+                                <!-- 삼성패스 -->
+                                <h5 class="type_title">인증요청 <span>삼성패스</span></h5>
+                                <p style="padding:0; color:dimgrey;">
+                                    휴대폰으로 인증요청이 전송되었습니다.<br>
+                                    앱으로 이동하여 인증을 마친 후 아래 ‘인증완료‘ 버튼을 클릭해주세요.
+                                </p>
+                                <ul class="type_step">
+                                    <li>
+                                        <div class="bg">
+                                            <img src="../../assets/images/type_samsungpass_logo.png" alt="삼성패스 앱">
+                                        </div>
+                                        <dl>
+                                            <dt><em class="en">Step 01</em></dt>
+                                            <dd>
+                                                앱에서<br>
+                                                인증 요청 메시지 확인
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <div class="bg"></div>
+                                        <dl>
+                                            <dt><em class="en">Step 02</em></dt>
+                                            <dd>
+                                                인증 진행<br>
+                                                (비밀번호 등)
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <div class="bg"></div>
+                                        <dl>
+                                            <dt><em class="en">Step 03</em></dt>
+                                            <dd>
+                                                인증 완료 후<br>
+                                                하단의 인증 완료 클릭
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                                <div class="bottom_promotion popup">
+                                    스마트폰에 PUSH 알림이 오지 않을 경우 조치방법
+                                    <br><br>
+                                    ① 삼성패스의 알림을 설정해주세요. [단말 설정 > 애플리케이션 > <em class="en">Samsung Pass</em> > 일반 알림 설정]<br>
+                                    ② 삼성패스에서 전자서명 인증서를 삭제하고 사용자의 전화번호를 사용해서 전자서명 인증서를 재발급해보세요.<br>
+                                    ③ 문제가 계속된다면, <strong style="color:tomato">[고객센터 1577-8787]</strong> 로 연락해 주세요.
+                                </div>
+                                <!-- //삼성패스 -->
+
+                                <!-- KB모바일 -->
+                                <h5 class="type_title">인증요청 <span><span class="en">KB</span>모바일</span></h5>
+                                <p style="padding:0; color:dimgrey;">
+                                    휴대폰으로 인증요청이 전송되었습니다.<br>
+                                    앱으로 이동하여 인증을 마친 후 아래 ‘인증완료‘ 버튼을 클릭해주세요.
+                                </p>
+                                <ul class="type_step">
+                                    <li>
+                                        <div class="bg">
+                                            <img src="../../assets/images/type_kb_logo.png" alt="KB모바일 앱">
+                                        </div>
+                                        <dl>
+                                            <dt><em class="en">Step 01</em></dt>
+                                            <dd>
+                                                앱에서<br>
+                                                인증 요청 메시지 확인
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <div class="bg"></div>
+                                        <dl>
+                                            <dt><em class="en">Step 02</em></dt>
+                                            <dd>
+                                                인증 진행<br>
+                                                (비밀번호 등)
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <div class="bg"></div>
+                                        <dl>
+                                            <dt><em class="en">Step 03</em></dt>
+                                            <dd>
+                                                인증 완료 후<br>
+                                                하단의 인증 완료 클릭
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                                <div class="bottom_promotion popup">
+                                    스마트폰에 <span class="en">PUSH</span> 알림이 오지 않을 경우 조치방법 <strong style="color:tomato">[<span class="en">KB</span>국민은행 고객센터 1588-9999]</strong>
+                                    <br><br>
+                                    ① 고객님의 휴대폰 설정에서 <span class="en">KB</span>스타뱅킹 알림을 ‘허용‘으로 등록해 주세요.<br>
+                                    ② [<span class="en">KB</span>스타뱅킹 > 인증센터 > <span class="en">KB</span>모바일인증서 > <span class="en">PC</span>연동인증 <span class="en">PUSH</span> 설정] <span class="en">PUSH</span> 수신 해제 후 재동의 해주세요.<br>
+                                    ③ 1, 2번 조치 후에도 <span class="en">PUSH</span>가 오지 않으면 <span class="en">KB</span>스타뱅킹 앱 재설치 후 <span class="en">KB</span>모바일인증서를 재발급 해보세요.
+                                </div>
+                                <!-- //KB모바일 -->
+
+                                <!-- 페이코 -->
+                                <h5 class="type_title">인증요청 <span>페이코</span></h5>
+                                <p style="padding:0; color:dimgrey;">
+                                    휴대폰으로 인증요청이 전송되었습니다.<br>
+                                    앱으로 이동하여 인증을 마친 후 아래 ‘인증완료‘ 버튼을 클릭해주세요.
+                                </p>
+                                <ul class="type_step">
+                                    <li>
+                                        <div class="bg">
+                                            <img src="../../assets/images/type_payco_logo.png" alt="페이코 앱">
+                                        </div>
+                                        <dl>
+                                            <dt><em class="en">Step 01</em></dt>
+                                            <dd>
+                                                앱에서<br>
+                                                인증 요청 메시지 확인
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <div class="bg"></div>
+                                        <dl>
+                                            <dt><em class="en">Step 02</em></dt>
+                                            <dd>
+                                                인증 진행<br>
+                                                (비밀번호 등)
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <div class="bg"></div>
+                                        <dl>
+                                            <dt><em class="en">Step 03</em></dt>
+                                            <dd>
+                                                인증 완료 후<br>
+                                                하단의 인증 완료 클릭
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                                <div class="bottom_promotion popup">
+                                    <span class="en">PUSH</span>(인증요청)가 휴대폰으로 오지 않았다면 아래 순서로 확인해 주세요.
+                                    <br><br>
+                                    ① [페이코 앱 설치] 가 휴대폰에 되어 있는지 확인해 주세요.<br>
+                                    ② [페이코 앱 > 더보기 > <span class="en">PAYCO</span> 인증서] 에서 인증 요청 내용을 확인할 수 있습니다.<br>
+                                    ③ 문제가 계속된다면, <strong style="color:tomato">[페이코 고객센터 1544-6891]</strong> 로 연락해 주세요.
+                                </div>
+                                <!-- //페이코 -->
+                                   
+                                <div class="modal_btn">
+                                    <button class="madal_btn modal_btn2 blue" onclick="closeLayer('modalType')">닫기</button>
+                                    <button type="button" class="madal_btn modal_btn2 green">인증완료</button>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <!-- //간편인증업체별 팝업 -->
+
+                    <!-- //2021.12.수정 -->
+
+
+                    <div id="modal2" class="modal none_auto">
+                        <!-- Modal 내용 -->
+                        <div class="modal-content">
+                            <!-- 스크롤이 필요할 경우 클래스 modal-content-scroll 추가 -->
+                            <h1 class="modal_title">자동입력 방지문자</h1>
+                            <a href="" class="close_btnB"></a>
+                            <p>아래 이미지를 보이는대로 입력해주세요</p>
+                            <div class="flex_sb">
+                                <img id="img"
+                                    src="data:image/png;base64,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"
+                                    style="background-repeat:no-repeat" title="자동입력 방지문 이미지">
+                                <div class="re_icon">
+                                    <i class="fa fa-refresh" aria-hidden="true"></i>
+                                    <p class="re_text">새로고침</p>
+                                </div>
+                            </div>
+                            <div class="form_area">
+                                <div>
+                                    <input type="text" class="">
+                                </div>
+                            </div>
+                            <div class="modal_btn">
+                                <button class="madal_btn green modal_close">확인</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- 본인인증부분끝 -->
+
+        </div>
+
+
+        <div class="info_area">
+
+            <!-- 정보입력부분시작 -->
+
+            <!-- 2022-05-31 수정 -->
+            <div class="step-box">
+                <!-- step단계에 따라 class명 변경 step1, step2... -->
+                <div class="step-state step3">
+                    <ul>
+                        <!--li갯수에 따라 width:%조절 -->
+                        <li style="width:25%">
+                            <p>약관동의</p>
+                        </li>
+                        <li style="width:25%">
+                            <p>본인인증</p>
+                        </li>
+                        <li style="width:25%">
+                            <p>정보입력</p>
+                        </li>
+                        <li style="width:25%">
+                            <p>가입완료</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //2022-05-31 수정 -->
+
+            <div class="form_box">
+                <h2 class="title">정보입력</h2>
+                <p class="title_txt">회원가입에 필요한 정보를 입력해 주세요.<br>
+                    가입 후 교통카드와 지역화폐를 등록 후 지원금을 신청해 주세요.
+                </p>
+
+                <form action="" method="" action="">
+
+                    <div class="form_area">
+                        <h3 class="title">
+                            <label for="">이름</label>
+                        </h3>
+                        <div>
+                            <input type="text" title="이름" class="" value="홍길동" readonly>
+                        </div>
+                    </div>
+                    <div class="form_area warning_mg">
+                        <h3 class="title">
+                            <label for="id" class="star">아이디<span class="compulsory_txt">필수입력항목</span></label>
+                        </h3>
+                        <div class="box_2_box">
+                            <input type="text" id="id" title="5~20자의 영문 또는 영문과 숫자만 가능" class="box_s" placeholder="5~20자의 영문, 영문과 숫자">
+                            <button class="btn_s green">중복확인</button>
+                        </div>
+                        <div class="warning_box">
+                            <p class="warning"></p>
+                        </div>
+                    </div>
+                    <div class="form_area warning_mg">
+                        <h3 class="title">
+                            <label for="pw" class="star">비밀번호<span class="compulsory_txt">필수입력항목</span></label>
+                        </h3>
+                        <div>
+                            <input type="password" id="pw" title="비밀번호 8자리이상 20자리 미만으로 영문과 숫자조합에 특수문자 1자 이상" placeholder="영문+숫자+특수문자 1자 이상">
+                            <img class="watch" src="../../assets/images/watch.svg" alt="비밀번호 보기 이미지">
+                        </div>
+                        <div class="warning_box">
+                            <p class="warning"></p>
+                        </div>
+                    </div>
+                    <div class="form_area warning_mg">
+                        <h3 class="title">
+                            <label for="pw_2" class="star">비밀번호 확인<span class="compulsory_txt">필수입력항목</span></label>
+                        </h3>
+                        <div>
+                            <input type="password" id="pw_2" title="비밀번호를 다시 한번 입력해주세요" placeholder="비밀번호를 다시 한번 입력해주세요.">
+                            <img class="watch" src="../../assets/images/watch-hide.svg" alt="비밀번호 가리기 이미지">
+                        </div>
+                        <!-- <div class="warning_box">
+                            <p class="warning">비밀번호가 일치하지 않습니다.</p>
+                        </div> -->
+                        <div class="warning_box">
+                            <p class="area_info">비밀번호가 일치합니다.</p>
+                        </div>
+                    </div>
+                </form>
+                <div class="btn_area">
+                    <button class="btn_2 blue">이전</button>
+                    <button type="button" class="btn_2 green info_next">가입완료</button>
+                </div>
+            </div>
+
+    </section>
+    <footer>
+        <div class="footer_nav">
+            <span class="box">
+                <a href="#"><span class="">사이트맵</span></a>
+                <a href="#"><span class="">이용약관</span></a>
+            </span>
+            <a href="#"><span class="">개인정보 수집/이용에 관한 약관</span></a>
+            <a href="#"><span class="">개인정보처리 및 위탁에 관한 안내 약관</span></a>
+            <a href="#"><span class="">개인정보처리방침</span></a>
+        </div>
+        <p class="copy">COPYRIGHT 2013 BY GYEONGGI URBAN INNOVATION<br class="mo"> CORPORATION ALL RIGHTS RESERVED</p>
+        <div class="add">
+            <p>경기도 수원시 권선구 권중로 46&lpar;권선동&rpar; 우편번호 16556</p>
+        </div>
+        <div class="tel">
+            <p>청소년 교통비 지원 사업 문의 &colon; <br class="mo">경기도 콜센터 031-120</p>
+            <p>청소년 교통비 지원 포털 시스템 문의 &colon; <br class="mo">1644-0006 &lpar;상담시간 &colon; 평일 09:00 &sim; 18:00&rpar;</p>
+        </div>
+    </footer>
+</body>
+
+</html>

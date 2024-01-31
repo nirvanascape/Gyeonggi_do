@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>경기도 청소년 교통비 지원 관리자 시스템</title>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</head>
+
+<body>
+    <div class="join_guide_outer">
+        <div class="join_guide">
+            <div class="top">
+                <div class="top_inner">
+                    <h1 class="top_title">비회원신청 따라하기</h1>
+                    <img onclick="javascript:window.close(); return false;" src="../../assets/images/close.svg" alt="닫기버튼" class="close_new">
+                </div>
+                <div class="menu">
+                    <ul class="tab tab-menu">
+                        <li class="tabs1 active"><a href="#tab1" class="active">28개 시 &middot; 군</a></li>
+                        <li class="tabs2"><a href="#tab2">성남시&comma; 시흥시</a></li>
+                        <li class="tabs3"><a href="#tab3">김포시</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main">
+                <ul class="tab_area">
+                    <!-- 28개 시 -->
+                    <li id="tab1">
+                        <article class="main_accordion main_accordion5">
+                            <div class="container">
+                                <ul class="accordion accordion5" id="accordion5">
+                                    <li class="accordion__list accordion__lis5">
+                                        <div class="link5"><span class="link__title">16자리의 현재 사용중인 교통카드 등록, 본인의 지역화폐</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                        <ul class="submenu5">
+                                            <li><a href="javascript://">
+                                                    <div class="city_all top_city">
+                                                        <div class="g_page0">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case_commom/img-n-guide-com-01.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">비회원 신청 대상자인 청소년께서는 버튼을 클릭 후 비회원 신청서 작성을 진행해 주세요.</p>
+                                                                    <p class="red">비회원 신청을 완료하신 경우에는 비회원 신청 내역을 조회하실 수 있습니다. </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page1">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case_commom/img-n-guide-com-02.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">모든 약관이 필수동의가 필요하므로 모든 이용약관에 동의해 주십시오.</p>
+                                                                    <p class="red">모든 이용약관에 동의한 후 다음 단계로 이동합니다.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page2">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case1/c_28/img-n-guide-case1-01.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">신청하시는 청소년의 이름을 입력하세요.</p>
+                                                                    <p class="red">신청하시는 청소년의 주민등록번호 13자리를 입력하세요.</p>
+                                                                    <p class="red">주민등록상 거주하고 있는 지역을 선택해 주세요.</p>
+                                                                    <p class="red">지역화폐에 가입되어 있는 휴대폰 번호를 입력해 주세요.</p>
+                                                                    <p class="red">만료되지 않은 16자리의 교통카드인 경우 ‘일반 신청’에 체크해 주세요.</p>
+                                                                    <p class="red">교통카드의 종류와 발행사를 선택해 주세요. 아메리칸 익스프레스 카드일 경우 체크해 주세요.</p>
+                                                                    <p class="red">해당 청소년 본인의 지역화폐를 조회합니다. (지역화폐가 없는 경우, 7번과 8번은 생략해 주세요)</p>
+                                                                </div>
+                                                                <div class="g_view g_view2">
+                                                                    <p class="g_bt"> < 지역화폐 선택 방법 > </p>
+                                                                    <img src="../../assets/images/guide_non/Case_commom/img-n-guide-com-03.png" alt="지역화폐선택" class="ano_size5 mt0">
+                                                                    <p>
+                                                                         1. 지급받으실 지역화폐를 선택해 주세요.<br>
+                                                                        <span class="g_ct">
+                                                                            &#8251; 지역화폐가 없어도 회원가입이 가능하며,<br> 지역화폐 발급 후 지원금을 신청해 주십시오.
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red ano_red5">조회 후 선택한 지역화폐 번호가 자동으로 입력됩니다.</p>
+                                                                    <p class="red ano_red6">신청을 완료해 주세요.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page6">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case_commom/img-n-guide-com-05.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">교통비 지원금을 신청합니다.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page5">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case1/c_28/img-n-guide-case1-02.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">신청이 완료되어 메인페이지로 이동합니다.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="accordion__list accordion__lis5">
+                                        <div class="link5"><span class="link__title">17자리 이상 또는 영문이 포함된 교통카드 등록, 본인의 지역화폐</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                        <ul class="submenu5">
+                                            <li><a href="javascript://">
+                                                    <div class="city_all top_city">
+                                                        <div class="g_page0">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case_commom/img-n-guide-com-01.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">비회원 신청 대상자인 청소년께서는 버튼을 클릭 후 비회원 신청서 작성을 진행해 주세요.</p>
+                                                                    <p class="red">비회원 신청을 완료하신 경우에는 비회원 신청 내역을 조회하실 수 있습니다. </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page1">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case_commom/img-n-guide-com-02.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">모든 약관이 필수동의가 필요하므로 모든 이용약관에 동의해 주십시오.</p>
+                                                                    <p class="red">모든 이용약관에 동의한 후 다음 단계로 이동합니다.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page2">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case2/c_28/img-n-guide-case2-01.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">신청하시는 청소년의 이름을 입력하세요.</p>
+                                                                    <p class="red">신청하시는 청소년의 주민등록번호 13자리를 입력하세요.</p>
+                                                                    <p class="red">주민등록상 거주하고 있는 지역을 선택해 주세요.</p>
+                                                                    <p class="red">지역화폐에 가입되어 있는 휴대폰 번호를 입력해 주세요.</p>
+                                                                    <p class="red">카드번호가 17자리 이상, 또는 영문이 포함된 선불 교통카드의 경우에 체크해 주세요.</p>
+                                                                    <p class="red">교통카드의 종류와 발행사를 선택해 주세요. 아메리칸 익스프레스 카드일 경우 체크해 주세요.</p>
+                                                                    <p class="red">해당 청소년 본인의 지역화폐를 조회합니다.</p>
+                                                                </div>
+                                                                <div class="g_view g_view2">
+                                                                    <p class="g_bt"> < 지역화폐 선택 방법 > </p>
+                                                                    <img src="../../assets/images/guide_non/Case_commom/img-n-guide-com-03.png" alt="지역화폐선택" class="ano_size5 mt0">
+                                                                    <p>
+                                                                         1. 지급받으실 지역화폐를 선택해 주세요.<br>
+                                                                        <span class="g_ct">
+                                                                            &#8251; 지역화폐가 없어도 회원가입이 가능하며,<br> 지역화폐 발급 후 지원금을 신청해 주십시오.
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red ano_red5">조회 후 선택한 지역화폐 번호가 자동으로 입력됩니다.</p>
+                                                                    <p class="red ano_red6">신청을 완료해 주세요.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page6">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case_commom/img-n-guide-com-05.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">교통비 지원금을 신청합니다.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page5">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case1/c_28/img-n-guide-case1-02.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">신청이 완료되어 메인페이지로 이동합니다.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            </a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="accordion__list accordion__lis5">
+                                        <div class="link5"><span class="link__title">분실 또는 만료된 교통카드 등록, 13세 또는 지역화폐가 없는 청소년</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                        <ul class="submenu5">
+                                            <li><a href="javascript://">
+                                                    <div class="city_all top_city">
+                                                        <div class="g_page0">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case_commom/img-n-guide-com-01.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">비회원 신청 대상자인 청소년께서는 버튼을 클릭 후 비회원 신청서 작성을 진행해 주세요.</p>
+                                                                    <p class="red">비회원 신청을 완료하신 경우에는 비회원 신청 내역을 조회하실 수 있습니다. </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page1">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case_commom/img-n-guide-com-02.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">모든 약관이 필수동의가 필요하므로 모든 이용약관에 동의해 주십시오.</p>
+                                                                    <p class="red">모든 이용약관에 동의한 후 다음 단계로 이동합니다.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page2">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case3/c_28/img-n-guide-case3-01.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">신청하시는 청소년의 이름을 입력하세요.</p>
+                                                                    <p class="red">신청하시는 청소년의 주민등록번호 13자리를 입력하세요.</p>
+                                                                    <p class="red">주민등록상 거주하고 있는 지역을 선택해 주세요.</p>
+                                                                    <p class="red">청소년 회원으로 가입한 휴대폰 번호를 입력해 주세요.</p>
+                                                                    <p class="red">분실 또는 만료된 교통카드를 등록하시는 경우에 체크해 주세요.</p>
+                                                                    <p class="red">교통카드의 종류와 발행사를 선택해 주세요. 아메리칸 익스프레스 카드일 경우 체크해 주세요.</p>
+                                                                    <p class="red">지역화폐를 조회하지 않고 바로 신청을 완료해 주세요.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page6">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case_commom/img-n-guide-com-05.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">교통비 지원금을 신청합니다.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page5">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case1/c_28/img-n-guide-case1-02.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">신청이 완료되어 메인페이지로 이동합니다.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                    </li>
+                    <li id="tab2">
+                        <article class="main_accordion main_accordion6">
+                            <div class="container">
+                                <ul class="accordion accordion6" id="accordion6">
+                                    <li class="accordion__list accordion__lis6">
+                                        <div class="link6"><span class="link__title">16자리의 현재 사용중인 교통카드 등록, 본인의 지역화폐</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                        <ul class="submenu6">
+                                            <li><a href="javascript://">
+                                                    <div class="city_all top_city">
+                                                        <div class="g_page0">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case_commom/img-n-guide-com-01.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">비회원 신청 대상자인 청소년께서는 버튼을 클릭 후 비회원 신청서 작성을 진행해 주세요.</p>
+                                                                    <p class="red">비회원 신청을 완료하신 경우에는 비회원 신청 내역을 조회하실 수 있습니다. </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page1">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case_commom/img-n-guide-com-02.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">모든 약관이 필수동의가 필요하므로 모든 이용약관에 동의해 주십시오.</p>
+                                                                    <p class="red">모든 이용약관에 동의한 후 다음 단계로 이동합니다.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page2">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case1/c_sungsi/img-n-guide-case1-01.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">신청하시는 청소년의 이름을 입력하세요.</p>
+                                                                    <p class="red">신청하시는 청소년의 주민등록번호 13자리를 입력하세요.</p>
+                                                                    <p class="red">주민등록상 거주하고 있는 지역을 선택해 주세요.</p>
+                                                                    <p class="red">지역화폐에 가입되어 있는 휴대폰 번호를 입력해 주세요.</p>
+                                                                    <p class="red">만료되지 않은 16자리의 교통카드인 경우 ‘일반 신청’에 체크해 주세요.</p>
+                                                                    <p class="red">교통카드의 종류와 발행사를 선택해 주세요. 아메리칸 익스프레스 카드일 경우 체크해 주세요.</p>
+                                                                    <p class="red">신청을 완료해 주세요.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page6">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case_commom/img-n-guide-com-05.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">교통비 지원금을 신청합니다.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page5">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case1/c_sungsi/img-n-guide-case1-02.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">신청이 완료되어 메인페이지로 이동합니다.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="accordion__list accordion__lis6">
+                                        <div class="link6"><span class="link__title">17자리 이상 또는 영문이 포함된 교통카드 등록, 본인의 지역화폐</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                        <ul class="submenu6">
+                                            <li><a href="javascript://">
+                                                    <div class="city_all top_city">
+                                                        <div class="g_page0">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case_commom/img-n-guide-com-01.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">비회원 신청 대상자인 청소년께서는 버튼을 클릭 후 비회원 신청서 작성을 진행해 주세요.</p>
+                                                                    <p class="red">비회원 신청을 완료하신 경우에는 비회원 신청 내역을 조회하실 수 있습니다. </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page1">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case_commom/img-n-guide-com-02.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">모든 약관이 필수동의가 필요하므로 모든 이용약관에 동의해 주십시오.</p>
+                                                                    <p class="red">모든 이용약관에 동의한 후 다음 단계로 이동합니다.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page2">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case2/c_sungsi/img-n-guide-case2-01.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">신청하시는 청소년의 이름을 입력하세요.</p>
+                                                                    <p class="red">신청하시는 청소년의 주민등록번호 13자리를 입력하세요.</p>
+                                                                    <p class="red">주민등록상 거주하고 있는 지역을 선택해 주세요.</p>
+                                                                    <p class="red">지역화폐에 가입되어 있는 휴대폰 번호를 입력해 주세요.</p>
+                                                                    <p class="red">카드번호가 17자리 이상, 또는 영문이 포함된 선불 교통카드의 경우에 체크해 주세요.</p>
+                                                                    <p class="red">교통카드의 종류와 발행사를 선택해 주세요. 아메리칸 익스프레스 카드일 경우 체크해 주세요.</p>
+                                                                    <p class="red">신청을 완료해 주세요.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page6">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case_commom/img-n-guide-com-05.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">교통비 지원금을 신청합니다.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page5">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case1/c_sungsi/img-n-guide-case1-02.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">신청이 완료되어 메인페이지로 이동합니다.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="accordion__list accordion__lis6">
+                                        <div class="link6"><span class="link__title">분실 또는 만료된 교통카드 등록, 13세 또는 지역화폐가 없는 청소년</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                        <ul class="submenu6">
+                                            <li><a href="javascript://">
+                                                    <div class="city_all top_city">
+                                                        <div class="g_page0">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case_commom/img-n-guide-com-01.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">비회원 신청 대상자인 청소년께서는 버튼을 클릭 후 비회원 신청서 작성을 진행해 주세요.</p>
+                                                                    <p class="red">비회원 신청을 완료하신 경우에는 비회원 신청 내역을 조회하실 수 있습니다. </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page1">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case_commom/img-n-guide-com-02.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">모든 약관이 필수동의가 필요하므로 모든 이용약관에 동의해 주십시오.</p>
+                                                                    <p class="red">모든 이용약관에 동의한 후 다음 단계로 이동합니다.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page2">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case3/c_sungsi/img-n-guide-case3-01.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">신청하시는 청소년의 이름을 입력하세요.</p>
+                                                                    <p class="red">신청하시는 청소년의 주민등록번호 13자리를 입력하세요.</p>
+                                                                    <p class="red">주민등록상 거주하고 있는 지역을 선택해 주세요.</p>
+                                                                    <p class="red">청소년 회원으로 가입한 휴대폰 번호를 입력해 주세요.</p>
+                                                                    <p class="red">분실 또는 만료된 교통카드를 등록하시는 경우에 체크해 주세요.</p>
+                                                                    <p class="red">교통카드의 종류와 발행사를 선택해 주세요. 아메리칸 익스프레스 카드일 경우 체크해 주세요.</p>
+                                                                    <p class="red">신청을 완료해 주세요.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page6">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case_commom/img-n-guide-com-05.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">교통비 지원금을 신청합니다.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page5">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case1/c_sungsi/img-n-guide-case1-02.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">신청이 완료되어 메인페이지로 이동합니다.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                    </li>
+                    <li id="tab3">
+                        <article class="main_accordion main_accordion7">
+                            <div class="container">
+                                <ul class="accordion accordion7" id="accordion7">
+                                    <li class="accordion__list accordion__lis7">
+                                        <div class="link7"><span class="link__title">16자리의 현재 사용중인 교통카드 등록, 본인의 지역화폐</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                        <ul class="submenu7">
+                                            <li><a href="javascript://">
+                                                    <div class="city_all top_city">
+                                                        <div class="g_page0">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case_commom/img-n-guide-com-01.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">비회원 신청 대상자인 청소년께서는 버튼을 클릭 후 비회원 신청서 작성을 진행해 주세요.</p>
+                                                                    <p class="red">비회원 신청을 완료하신 경우에는 비회원 신청 내역을 조회하실 수 있습니다. </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page1">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case_commom/img-n-guide-com-02.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">모든 약관이 필수동의가 필요하므로 모든 이용약관에 동의해 주십시오.</p>
+                                                                    <p class="red">모든 이용약관에 동의한 후 다음 단계로 이동합니다.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page2">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case1/c_gimpo/img-n-guide-case1-01.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">신청하시는 청소년의 이름을 입력하세요.</p>
+                                                                    <p class="red">신청하시는 청소년의 주민등록번호 13자리를 입력하세요.</p>
+                                                                    <p class="red">주민등록상 거주하고 있는 지역을 선택해 주세요.</p>
+                                                                    <p class="red">지역화폐에 가입되어 있는 휴대폰 번호를 입력해 주세요.</p>
+                                                                    <p class="red">만료되지 않은 16자리의 교통카드인 경우 ‘일반 신청’에 체크해 주세요.</p>
+                                                                    <p class="red">교통카드의 종류와 발행사를 선택해 주세요. 아메리칸 익스프레스 카드일 경우 체크해 주세요.</p>
+                                                                    <p class="red">신청을 완료해 주세요.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page6">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case_commom/img-n-guide-com-05.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">교통비 지원금을 신청합니다.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page5">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case1/c_gimpo/img-n-guide-case1-02.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">신청이 완료되어 메인페이지로 이동합니다.</p>
+                                                                </div>
+                                                            </div>
+                                                            <!-- <div class="btn">
+                                                            <ul>
+                                                                <li><a href=""><span>이전</span></a></li>
+                                                                <li><a href=""><span>처음</span></a></li>
+                                                            </ul>
+                                                        </div> -->
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="accordion__list accordion__lis7">
+                                        <div class="link7"><span class="link__title">17자리 이상 또는 영문이 포함된 교통카드 등록, 본인의 지역화폐</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                        <ul class="submenu7">
+                                            <li><a href="javascript://">
+                                                    <div class="city_all top_city">
+                                                        <div class="g_page0">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case_commom/img-n-guide-com-01.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">비회원 신청 대상자인 청소년께서는 버튼을 클릭 후 비회원 신청서 작성을 진행해 주세요.</p>
+                                                                    <p class="red">비회원 신청을 완료하신 경우에는 비회원 신청 내역을 조회하실 수 있습니다. </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page1">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case_commom/img-n-guide-com-02.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">모든 약관이 필수동의가 필요하므로 모든 이용약관에 동의해 주십시오.</p>
+                                                                    <p class="red">모든 이용약관에 동의한 후 다음 단계로 이동합니다.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page2">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case2/c_gimpo/img-n-guide-case2-01.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">신청하시는 청소년의 이름을 입력하세요.</p>
+                                                                    <p class="red">신청하시는 청소년의 주민등록번호 13자리를 입력하세요.</p>
+                                                                    <p class="red">주민등록상 거주하고 있는 지역을 선택해 주세요.</p>
+                                                                    <p class="red">지역화폐에 가입되어 있는 휴대폰 번호를 입력해 주세요.</p>
+                                                                    <p class="red">카드번호가 17자리 이상, 또는 영문이 포함된 선불 교통카드의 경우에 체크해 주세요.</p>
+                                                                    <p class="red">교통카드의 종류와 발행사를 선택해 주세요. 아메리칸 익스프레스 카드일 경우 체크해 주세요.</p>
+                                                                    <p class="red">신청을 완료해 주세요.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page6">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case_commom/img-n-guide-com-05.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">교통비 지원금을 신청합니다.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page5">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case1/c_gimpo/img-n-guide-case1-02.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">신청이 완료되어 메인페이지로 이동합니다.</p>
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="accordion__list accordion__lis7">
+                                        <div class="link7"><span class="link__title">분실 또는 만료된 교통카드 등록, 13세 또는 지역화폐가 없는 청소년</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                        <ul class="submenu7">
+                                            <li><a href="javascript://">
+                                                    <div class="city_all top_city">
+                                                        <div class="g_page0">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case_commom/img-n-guide-com-01.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">비회원 신청 대상자인 청소년께서는 버튼을 클릭 후 비회원 신청서 작성을 진행해 주세요.</p>
+                                                                    <p class="red">비회원 신청을 완료하신 경우에는 비회원 신청 내역을 조회하실 수 있습니다. </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page1">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case_commom/img-n-guide-com-02.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">모든 약관이 필수동의가 필요하므로 모든 이용약관에 동의해 주십시오.</p>
+                                                                    <p class="red">모든 이용약관에 동의한 후 다음 단계로 이동합니다.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page2">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case3/c_gimpo/img-n-guide-case3-01.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">신청하시는 청소년의 이름을 입력하세요.</p>
+                                                                    <p class="red">신청하시는 청소년의 주민등록번호 13자리를 입력하세요.</p>
+                                                                    <p class="red">주민등록상 거주하고 있는 지역을 선택해 주세요.</p>
+                                                                    <p class="red">청소년 회원으로 가입한 휴대폰 번호를 입력해 주세요.</p>
+                                                                    <p class="red">분실 또는 만료된 교통카드를 등록하시는 경우에 체크해 주세요.</p>
+                                                                    <p class="red">교통카드의 종류와 발행사를 선택해 주세요. 아메리칸 익스프레스 카드일 경우 체크해 주세요.</p>
+                                                                    <p class="red">신청을 완료해 주세요.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page6">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case_commom/img-n-guide-com-05.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">교통비 지원금을 신청합니다.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="g_page5">
+                                                            <div class="main_top">
+                                                                <div class="img_area">
+                                                                    <img src="../../assets/images/guide_non/Case1/c_gimpo/img-n-guide-case1-02.png" alt="">
+                                                                </div>
+                                                                <div class="text_area">
+                                                                    <p class="red">신청이 완료되어 메인페이지로 이동합니다.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

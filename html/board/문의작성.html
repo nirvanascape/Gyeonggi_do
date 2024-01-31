@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>경기도 청소년 교통비 지원 포탈</title>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="../../assets/css/swiper.min.css">
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../../assets/js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="../../assets/js/swiper.min.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</head>
+<body>
+    <header class="main_header">
+        <div class="header_inner clearfix">
+            <h1><a href="#" class="logo">
+                <img src="../../assets/images/logo.svg" alt="로고"></a>
+            </h1>
+            <div class="header_login login">
+                <a href=""><span class="user_name">로그아웃</span></a>
+            </div>
+            <!-- Mobile navigation 시작 -->
+            <div class="ham_nav">
+                <a class="button_container open" id="toggle">
+                        <img src="../../assets/images/open.svg" alt="메뉴열기버튼">
+                </a>
+                <div class="overlay" id="overlay">
+                    <div class="overlay_top">
+                        <h1><a href="#" class="ham_logo">
+                            <img src="../../assets/images/logo.svg" alt="로고"></a>
+                        </h1>
+                        <a class="button_container close" id="toggle">
+                            <img src="../../assets/images/close.svg" alt="메뉴닫기버튼">
+                        </a>
+                    </div>
+                    <div class="overlay_middle flex_sb">
+                        <button>로그인</button>
+                        <button>회원가입</button>
+                    </div>
+                    <div class="container">
+                        <ul class="accordion" id="accordion">
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">서비스 안내</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 1</a></li>
+                                    <li><a href="javascript://">submenu 1</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">게시판</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">교통카드 발급</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">마이페이지</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile navigation 끝 -->
+            <!-- Pc navigation 시작 -->
+            <div class="pc_nav">
+                <nav>
+                    <ul class="clearfix">
+                        <li class="dropdown">
+                            <a href="">서비스 안내</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">게시판</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">교통카드 발급</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">마이페이지</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Pc navigation 끝 -->
+        </div>
+    </header>
+    <section class="sub_section2">
+        <div class="tab_title ono_tab_title">
+            <p>1:1 문의작성</p>
+        </div>
+        <div class="board_box ono">
+            <h2>1:1 문의 작성</h2>
+            <form action="" method="" action="">
+                <div class="bind">
+                    <div class="form_area half">
+                        <h3 class="title">
+                            <label for="">이름</label>
+                        </h3>
+                        <div>
+                            <input type="text" id="" title="이름" class="" value="홍길동" readonly>
+                        </div>
+                    </div>
+                    <div class="form_area half">
+                        <h3 class="title">
+                            <label for="tel">휴대폰 번호</label>
+                        </h3>
+                        <div>
+                            <input type="text" id="tel" title="휴대폰 번호" class="" value="010 - 1234 - 1234" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="bind">
+                    <div class="form_area half">
+                        <h3 class="title">
+                            <label for="" class="star">문의 분야 선택</label>
+                        </h3>
+                        <div>
+                            <select id="" class="">
+                                <option value="" disabled selected>문의 분야를 선택해 주세요.</option>
+                                <option value="기능 문의 관련">기능 문의 관련</option>
+                                <option value="신청 자격 관련">신청 자격 관련</option>
+                                <option value="교통비 내역 관련">교통비 내역 관련</option>
+                                <option value="지급 관련">지급 관련</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form_area half">
+                        <h3 class="title">
+                            <label for="" class="star">지역 선택</label>
+                        </h3>
+                        <div>
+                            <select id="" class="">
+                                <option value="" disabled selected>문의 지역을 선택해 주세요.</option>
+                                <option value="가평군">가평군</option>
+                                <option value="고양시">고양시</option>
+                                <option value="과천시">과천시</option>
+                                <option value="광명시">광명시</option>
+                                <option value="광주시">광주시</option>
+                                <option value="구리시">구리시</option>
+                                <option value="군포시">군포시</option>
+                                <option value="김포시">김포시</option>
+                                <option value="남양주시">남양주시</option>
+                                <option value="동두천시">동두천시</option>
+                                <option value="부천시">부천시</option>
+                                <option value="성남시">성남시</option>
+                                <option value="수원시">수원시</option>
+                                <option value="시흥시">시흥시</option>
+                                <option value="안산시">안산시</option>
+                                <option value="안성시">안성시</option>
+                                <option value="안양시">안양시</option>
+                                <option value="양주시">양주시</option>
+                                <option value="양평군">양평군</option>
+                                <option value="여주시">여주시</option>
+                                <option value="연천군">연천군</option>
+                                <option value="오산시">오산시</option>
+                                <option value="용인시">용인시</option>
+                                <option value="의왕시">의왕시</option>
+                                <option value="의정부시">의정부시</option>
+                                <option value="이천시">이천시</option>
+                                <option value="파주시">파주시</option>
+                                <option value="평택시">평택시</option>
+                                <option value="포천시">포천시</option>
+                                <option value="하남시">하남시</option>
+                                <option value="화성시">화성시</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_area warning_mg">
+                    <h3 class="title">
+                        <label for="name" class="star">제목</label>
+                    </h3>
+                    <div>
+                        <input type="text" id="name" title="제목" class="" placeholder="30자 이내 기술" maxlength="30">
+                        <!-- class명으로 warning붙으면 경고박스로 변경-->
+                    </div>
+                    <div class="warning_box">
+                        <p class="warning"></p>
+                        <!-- 경고메세지 있을 시 p태그 안에 삽입 -->
+                    </div>
+                </div>
+                <div class="form_area warning_mg">
+                    <h3 class="title">
+                        <label for="name" class="star">제목</label>
+                    </h3>
+                    <div>
+                        <textarea id="name" title="내용" class="warning" placeholder="300자 이내 기술" maxlength="300" style="height:10rem;"></textarea>
+                    </div>
+                    <div class="warning_box">
+                        <p class="warning"></p>
+                    </div>
+                </div>
+                <div class="btn_area center">
+                    <button class="btn_2 blue">취소</button>
+                    <button class="btn_2 green">확인</button>
+                </div>
+                <form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_nav">
+            <span class="box">
+                <a href="#"><span class="">사이트맵</span></a>
+                <a href="#"><span class="">이용약관</span></a>
+            </span>
+            <a href="#"><span class="">개인정보 수집/이용에 관한 약관</span></a>
+            <a href="#"><span class="">개인정보처리 및 위탁에 관한 안내 약관</span></a>
+            <a href="#"><span class="">개인정보처리방침</span></a>
+        </div>
+        <p class="copy">COPYRIGHT 2013 BY GYEONGGI URBAN INNOVATION<br class="mo"> CORPORATION ALL RIGHTS RESERVED</p>
+        <div class="add">
+            <p>경기도 수원시 권선구 권중로 46&lpar;권선동&rpar; 우편번호 16556</p>
+            <p class="call">문의전화 : 경기도 콜센터 031-120</p>
+        </p>
+    </footer>
+</body>
+</html>

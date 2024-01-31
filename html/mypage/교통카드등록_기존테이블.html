@@ -1,0 +1,517 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>경기도 청소년 교통비 지원 포탈</title>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../../assets/css/reset.css"/>
+    <link rel="stylesheet" href="../../assets/css/style.css"/>
+    <link rel="stylesheet" href="../../assets/css/swiper.min.css">
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../../assets/js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="../../assets/js/swiper.min.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</head>
+<body>
+    <header class="main_header">
+        <div class="header_inner clearfix">
+            <h1><a href="#" class="logo">
+                <img src="../../assets/images/logo.svg" alt="로고"></a>
+            </h1>
+            <div class="header_login login">
+                <a href=""><span class="user_name">로그아웃</span></a>
+            </div>
+            <!-- Mobile navigation 시작 -->
+            <div class="ham_nav">
+                <a class="button_container open" id="toggle">
+                        <img src="../../assets/images/open.svg" alt="메뉴열기버튼">
+                </a>
+                <div class="overlay" id="overlay">
+                    <div class="overlay_top">
+                        <h1><a href="#" class="ham_logo">
+                            <img src="../../assets/images/logo.svg" alt="로고"></a>
+                        </h1>
+                        <a class="button_container close" id="toggle">
+                            <img src="../../assets/images/close.svg" alt="메뉴닫기버튼">
+                        </a>
+                    </div>
+                    <div class="overlay_middle flex_sb">
+                        <button>로그인</button>
+                        <button>회원가입</button>
+                    </div>
+                    <div class="container">
+                        <ul class="accordion" id="accordion">
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">서비스 안내</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 1</a></li>
+                                    <li><a href="javascript://">submenu 1</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">게시판</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">교통카드 발급</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">마이페이지</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile navigation 끝 -->
+            <!-- Pc navigation 시작 -->
+            <div class="pc_nav">
+                <nav>
+                    <ul class="clearfix">
+                        <li class="dropdown">
+                            <a href="">서비스 안내</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">게시판</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">교통카드 발급</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">마이페이지</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Pc navigation 끝 -->
+        </div>
+    </header>
+    <section class="mypage_section step">
+        <div class="board_box mypage">
+            <h2>마이페이지</h2>
+            <ul class="step_ck">
+                <li><a href="" >My Home</a></li>
+                <li class="active"><a href="">교통카드 등록</a></li>
+                <li><a href="">지역화폐 등록</a></li>
+                <li><a href="">지원금 신청</a></li>
+                <li><a href="">교통 이용 내역</a></li>
+                <li><a href="">지원금 신청 내역</a></li>
+                <li><a href="">개인정보수정</a></li>
+            </ul>
+        </div>
+        <div class="my_step_box">
+            <div class="list_top pay">
+                <div class="flex_sb pay">
+                    <h3 class="ano_h3 modi">교통카드 등록</h3>
+                    <div class="btn_area trans mt0" >
+                        <button type="button" class="lbtn green mt0 modi2" onclick="openLayer('t_card_reg_modal')" data-tooltip="chart01">교통카드 등록/변경</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal시작 -->
+            <div id="t_card_reg_modal" class="modal mypage_modal mypage_modal1 traffic_up">
+                <!-- Modal 내용 -->
+                <div class="modal-content" tabindex="0" data-focus="chart01" data-focus-prev="chart01-close" data-tooltip-con="chart01">
+                    <div class="top">
+                        <h1 class="modal_title">교통카드 등록</h1>
+                        <a href="" class="close_btnB"></a>
+                    </div>
+                    <div class="scroll">
+                        <div class="bottom">
+                            <h2 class="title modal_mo">교통카드 등록</h2>
+                            <form action="" method="" name="">
+                                <div class="form_area flex_s">
+                                    <div class="input_chk"  style="margin-right:2rem;">
+                                        <input type="radio" id="card_type1" name="card_type" checked/>
+                                        <label for="card_type1" class="chk">
+                                            신규 등록
+                                        </label>
+                                    </div>
+                                    <div class="input_chk">
+                                        <input type="radio" id="card_type2" name="card_type"/>
+                                        <label for="card_type2" class="chk">
+                                            분실/만료
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form_area mb0_5">
+                                    <h3 class="title">
+                                        <label for="" class="star">교통 카드 종류</label>
+                                    </h3>
+                                    <div class="box_2_box">
+                                        <select id="" class="sel_2" title="교통카드 종류 리스트">
+                                            <option value="선불교통">선불교통</option>
+                                            <option value="">선불교통</option>
+                                            <option value="">선불교통</option>
+                                        </select>
+                                        <select id="" class="sel_2" title="교통카드 발급사 리스트">
+                                            <option value="선불교통">선불교통</option>
+                                            <option value="">선불교통</option>
+                                            <option value="">선불교통</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form_area">
+                                    <div class="input_chk warning_mg">
+                                        <input type="checkbox" id="chk_card1" name="" class="parentchk4"/>
+                                        <label for="chk_card1" class="chk">아메리칸 익스프레스 (AMEX)</label>
+                                        <div class="warning_box" style="margin-top:.8rem;">
+                                            <p class="warning">아메리칸 익스프레스 카드는 15자리 이오니, 차례대로 15자리를 입력해 주세요.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_area warning_mg">
+                                    <h3 class="title">
+                                        <label for="num" class="star">교통 카드 번호</label>
+                                    </h3>
+                                    <div class="box_2_box select">
+                                        <input type="text" id="num" title="교통 카드 번호 첫 4자리 숫자" class="box_4s" placeholder="" maxlength="4">
+                                        <input type="text" title="교통 카드 번호 두번째 4자리 숫자" class="box_4s" placeholder="" maxlength="4">
+                                        <input type="text" title="교통 카드 번호 세번째 4자리 숫자" class="box_4s" placeholder="" maxlength="4">
+                                        <input type="text" title="교통 카드 번호 네번째 4자리 숫자" class="box_4s" placeholder="" maxlength="4">
+                                    </div>
+                                    <div class="warning_box">
+                                        <p class="warning"></p>
+                                    </div>
+                                </div>
+                                <div class="modal_btn">
+                                    <button class="madal_btn modal_btn2 blue" data-focus="chart01-close" data-focus-next="chart01">취소</button>
+                                    <button type="button" class="madal_btn modal_btn2 green">교통카드 등록</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2020-12 고도화 작업 수정 부분 시작 -->
+            <div class="list_body_2 area traffic">
+                <!-- 등록된 지역화폐가 없을 때 class empty 추가 -->
+                <div class="no_text_none">
+                    <div class="list_box">
+                        <div class="name" data-before="종류">
+                            <p>선불카드</p>
+                        </div>
+                        <div class="card_issuer" data-before="발행사">
+                            <p>카카오뱅크</p>
+                        </div>
+                        <div class="card_type t1" data-before="카드구분">
+                            <!-- 일반 t1, 분실만료 t2 class추가-->
+                            <p class="t1">일반</p>
+                            <p class="t2">분실만료</p>
+                        </div>
+                        <div class="num" data-before="번호">
+                            <p>5215 - 5622 - 5688 - 1522</p>
+                        </div>
+                        <div class="date" data-before="등록일">
+                            <p>2020년 07월 04일</p>
+                        </div>
+                        <!-- <div class="select" data-before="선택">
+                            <input type="checkbox" id="selectchk1">
+                            <label for="selectchk1" class=""><span class="chk_btn"></span><em>선택</em></label>
+                        </div> -->
+                        <div class="del" data-before="삭제">
+                            <button class="blue">삭제</button>
+                        </div>
+                    </div>
+                    <div class="list_box">
+                        <div class="name" data-before="종류">
+                            <p>선불카드</p>
+                        </div>
+                        <div class="card_issuer" data-before="발행사">
+                            <p>카카오뱅크</p>
+                        </div>
+                        <div class="card_type t1" data-before="카드구분">
+                            <!-- 일반 t1, 분실만료 t2 class추가-->
+                            <p class="t1">일반</p>
+                            <p class="t2">분실만료</p>
+                        </div>
+                        <div class="num" data-before="번호">
+                            <p>5215 - 5622 - 5688 - 1522</p>
+                        </div>
+                        <div class="date" data-before="등록일">
+                            <p>2020년 07월 04일</p>
+                        </div>
+                        <!-- <div class="select" data-before="선택">
+                            <input type="checkbox" id="selectchk1">
+                            <label for="selectchk1" class=""><span class="chk_btn"></span><em>선택</em></label>
+                        </div> -->
+                        <div class="del" data-before="삭제">
+                            <button class="blue">삭제</button>
+                        </div>
+                    </div>
+                    <div class="list_box">
+                        <div class="name" data-before="종류">
+                            <p>선불카드</p>
+                        </div>
+                        <div class="card_issuer" data-before="발행사">
+                            <p>카카오뱅크</p>
+                        </div>
+                        <div class="card_type t1" data-before="카드구분">
+                            <!-- 일반 t1, 분실만료 t2 class추가-->
+                            <p class="t1">일반</p>
+                            <p class="t2">분실만료</p>
+                        </div>
+                        <div class="num" data-before="번호">
+                            <p>5215 - 5622 - 5688 - 1522</p>
+                        </div>
+                        <div class="date" data-before="등록일">
+                            <p>2020년 07월 04일</p>
+                        </div>
+                        <!-- <div class="select" data-before="선택">
+                            <input type="checkbox" id="selectchk1">
+                            <label for="selectchk1" class=""><span class="chk_btn"></span><em>선택</em></label>
+                        </div> -->
+                        <div class="del" data-before="삭제">
+                            <button class="blue">삭제</button>
+                        </div>
+                    </div>
+                </div>
+                <p class="no_text_block" style="margin:2rem 0 2rem">
+                    등록된 교통카드가 없습니다.<br>
+                    교통카드를 등록해주세요.
+                </p>
+
+                <!-- //2020-12 고도화 작업 수정 부분 끝-->
+
+                <div class="bottom_promotion">
+                    <p class="bullet">
+                        분실카드 정산 포함 : 교통카드 분실 전에 교통카드를 등록하셨다면, 새로 등록하는 교통카드를 포함하여 교통카드 2매에 대해 지원금 정산에 포함하게 됩니다.<br>
+                        예시 1) 카드A 등록 후 분실 -> 카드B 등록 : 카드A 와 카드B 모두 지원금 정산에 포함<br>
+                        예시 2) 카드C 등록 : 카드B 와 카드C 모두 지원금 정산에 포함 (카드A 는 미포함)
+                    </p>
+                    <p>
+                        한번 등록된 카드는 재 등록이 되지 않으니, 꼭 확인하신 후 등록하여 주십시오.
+                    </p>
+                    <!-- 고도화 2020/12 -->
+                    <p>
+                        최대 2장의 교통카드를 정산에 적용할 수 있습니다.
+                    </p>
+                    <!-- //고도화 2020/12 -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_nav">
+            <span class="box">
+                <a href="#"><span class="">사이트맵</span></a>
+                <a href="#"><span class="">이용약관</span></a>
+            </span>
+            <a href="#"><span class="">개인정보 수집/이용에 관한 약관</span></a>
+            <a href="#"><span class="">개인정보처리 및 위탁에 관한 안내 약관</span></a>
+            <a href="#"><span class="">개인정보처리방침</span></a>
+        </div>
+        <p class="copy">COPYRIGHT 2013 BY GYEONGGI URBAN INNOVATION<br class="mo"> CORPORATION ALL RIGHTS RESERVED</p>
+        <div class="add">
+            <p>경기도 수원시 권선구 권중로 46&lpar;권선동&rpar; 우편번호 16556</p>
+            <p class="call">문의전화 : 경기도 콜센터 031-120</p>
+        </div>
+    </footer>
+    <!-- 2020-12 고도화 작업 수정 부분 시작 -->
+
+    <!-- 교통카드등록 선택팝업 -->
+
+    <!-- 선불교통카드 시작 -->
+    <div id="modalA" class="modal mypage_modal mypage_modal1 modalA">
+        <!-- Modal 내용 -->
+        <div class="modal-content">
+            <div class="top">
+                <h1 class="modal_title">선불 교통카드 번호확인 안내</h1>
+                <a href="" class="close_btnB"></a>
+            </div>
+            <p>캐시비/티머니 카드 등 선불교통 카드의 번호는 카드 뒷면에 별도의 교통카드 번호가 있습니다. 꼭 확인 후 입력해 주십시오.</p>
+            <div class="img_area">
+                <img src="../../assets/images/banner-02.png" alt="카드번호 확인을 위한 예시이미지">
+            </div>
+            <!-- 고도화 2020/12 -->
+            <p>청소년증, 대학교학생증으로 사용하는 교통카드에 대해서는 카드 뒤면 선불교통카드(캐시비 또는 티머니)번호를 입력하여 주시기 바랍니다.</p>
+            <!-- //고도화 2020/12 -->
+            <div class="modal_btn">
+                <button type="button" class="madal_btn modal_btn2 blue" onclick="closeLayer('modalA')">닫기</button>
+            </div>
+        </div>
+    </div>
+    <!-- //선불교통카드 끝 -->
+
+    <!-- 인증/등록 오류 시작 -->
+    <div id="modalC" class="modal mypage_modal mypage_modal1 modalA">
+        <!-- Modal 내용 -->
+        <div class="modal-content modalC">
+            <div class="top">
+                <!-- 고도화 2020/12 -->
+                <h1 class="modal_title">후불 교통카드 인증 / 등록 오류</h1>
+                <!-- //고도화 2020/12 -->
+                <a href="" class="close_btnB"></a>
+            </div>
+            <div class="scroll">
+                <p>카드의 인증 또는 등록 시 오류가 발생되는 경우 하단의 해당 카드 발행사에서 상담받으실 수 있습니다.</p>
+                <div class="error_box">
+                    <span class="circle_bullet">실패사유</span>
+                    <span class="message">인증이 실패 하였습니다.</span>
+                </div>
+                    <div class="error_box2">
+                        <!-- 고도화 2020/12 -->
+                        <span class="circle_bullet">등록(인증) 오류 관련 안내전화</span>
+                        <!-- //고도화 2020/12 -->
+                        <div class="scroll_box">
+                            <ul>
+                                <li>신한카드 인증센터 : 1544-1234</li>
+                                <li>신한카드 인증센터 : 1544-1234</li>
+                                <li>신한카드 인증센터 : 1544-1234</li>
+                                <li>신한카드 인증센터 : 1544-1234</li>
+                                <li>신한카드 인증센터 : 1544-1234</li>
+                                <li>신한카드 인증센터 : 1544-1234</li>
+                                <li>신한카드 인증센터 : 1544-1234</li>
+                                <li>신한카드 인증센터 : 1544-1234</li>
+                                <li>신한카드 인증센터 : 1544-1234</li>
+                                <li>신한카드 인증센터 : 1544-1234</li>
+                                <li>신한카드 인증센터 : 1544-1234</li>
+                                <li>신한카드 인증센터 : 1544-1234</li>
+                                <li>신한카드 인증센터 : 1544-1234</li>
+                                <li>신한카드 인증센터 : 1544-1234</li>
+                                <li>신한카드 인증센터 : 1544-1234</li>
+                                <li>신한카드 인증센터 : 1544-1234</li>
+                                <li>신한카드 인증센터 : 1544-1234</li>
+                                <li>신한카드 인증센터 : 1544-1234</li>
+                                <li>신한카드 인증센터 : 1544-1234</li>
+                                <li>신한카드 인증센터 : 1544-1234</li>
+                                <li>신한카드 인증센터 : 1544-1234</li>
+                                <li>신한카드 인증센터 : 1544-1234</li>
+                                <li>신한카드 인증센터 : 1544-1234</li>
+                            </ul>
+                        </div>
+                    </div>
+                <div class="modal_btn">
+                    <button type="button" class="madal_btn modal_btn2 blue" onclick="closeLayer('modalC')">닫기</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- //인증/등록 오류 끝 -->
+
+    <!-- 후불교통카드 시작 -->
+    <div id="modalB" class="modal mypage_modal mypage_modal1 modalA">
+        <!-- Modal 내용 -->
+        <div class="modal-content">
+            <div class="top">
+                <h1 class="modal_title">후불 교통카드 번호확인 안내</h1>
+                <a href="" class="close_btnB"></a>
+            </div>
+            <!-- 고도화 2020/12 -->
+            <div class="scroll">
+                <p>* K뱅크카드(1522-1155) 는 교통카드번호가 별도로 존재하오니, 위 카드를 등록하실 때에는 해당 카드사를 통해 교통카드번호를 꼭 확인 후 입력해 주십시오.<br><br>
+                * 카카오뱅크카드는 국민(은행)카드 제휴사로 국민카드 선택 후 교통카드 인증을 받으시기 바랍니다.   단, 카카오페이카드는 BC카드로 인증 받으시기 바랍니다.<br><br>
+                * 후불카드 선택 후 카드 종료 선택 시 카드 종류에 없는 카드의 경우 하기와 같이 선택하여 인증 받으시기 바랍니다.<br>
+                - 카드내 BC마크가 있는 카드 : BC카드 선택<br>
+                - 카드내 KB마크가 있는 카드 : 국민카드 선택
+                <span>
+                    ※ 삼성페이 교통카드는 실제 선불교통카드로 처리됨에 따라 선불교통 선택 후 캐시비 및 티머니 카드번호로 입력하여 주시기 바랍니다.(번호는 카드 뒷면에 있음)<br>
+                    ※ 입력된 카드번호와 실제 사용하는 교통카드번호가 틀릴 경우 교통이용내역이 없어 “0원＂처리가 될 수 있으니 유념하여 등록하여 주시기 바랍니다.
+                </span>
+                </p>
+                <div class="modal_btn">
+                    <button type="button" class="madal_btn modal_btn2 blue" onclick="closeLayer('modalB')">닫기</button>
+                </div>
+            </div>
+            <!-- //고도화 2020/12 -->
+        </div>
+    </div>
+    <!-- //후불교통카드 끝 -->
+
+
+
+
+    <!-- //2020-12 고도화 작업 수정 부분 끝 -->
+    <script>
+    //레이어팝업 뜨면 뒤로 tab이동 막기
+    function accessibilityFocus() {
+
+      $(document).on('keydown', '[data-focus-prev], [data-focus-next]', function(e){
+        var next = $(e.target).attr('data-focus-next'),
+            prev = $(e.target).attr('data-focus-prev'),
+            target = next || prev || false;
+
+        if(!target || e.keyCode != 9) {
+          return;
+        }
+
+        if( (!e.shiftKey && !!next) || (e.shiftKey && !!prev) ) {
+          setTimeout(function(){
+            $('[data-focus="' + target + '"]').focus();
+          }, 1);
+        }
+
+      });
+
+    }
+
+    $(document).ready(function(){
+        accessibilityFocus();
+    });
+
+    </script>
+</body>
+</html>

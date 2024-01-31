@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>경기도 청소년 교통비 지원 포탈</title>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../../assets/css/reset.css"/>
+    <link rel="stylesheet" href="../../assets/css/style.css"/>
+    <link rel="stylesheet" href="../../assets/css/swiper.min.css">
+    <!-- js -->
+    <script src="../../assets/js/jquery-3.5.1.min.js"></script>
+    <script src="../../assets/js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="../../assets/js/swiper.min.js"></script>
+    <script src="../../assets/js/main.js"></script>
+    <script language="JavaScript">
+    <!--
+    function setCookie( name, value, expiredays ) {
+       var todayDate = new Date();
+          todayDate.setDate( todayDate.getDate() + expiredays );
+          document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+       }
+
+    function closeWin() {
+       if ( document.once_form.chk_once.checked){
+          setCookie( "maindiv", "done" , 1 );
+       }
+       document.all['modal_once'].style.display = "none";
+    }
+    //-->
+    </script>
+</head>
+<body>
+    <!-- <button type="button" onclick="openLayer('modal_once')"></button> -->
+    <div id="modal_once" class="modal_once">
+        <!-- Modal 내용 -->
+        <div class="modal-content">
+
+            <h1 class="modal_title">타이틀 있는 팝업 1btn</h1>
+            <img src="../../assets/images/close.svg" alt="닫기버튼" class="close" onclick="javascript:closeWin();">
+            <!-- 스크롤이 필요할 경우 클래스 scroll로 영역 감싸주기 -->
+            <!-- <div class="scroll"> -->
+                <p>
+                    팝업 본문 내용이 들어갑니다.<br>
+                    컨텐츠 간격을 유지하여 본문내용 부분이 길어집니다.
+                    팝업 본문 내용이 들어갑니다.<br>
+                    컨텐츠 간격을 유지하여 본문내용 부분이 길어집니다.
+                    팝업 본문 내용이 들어갑니다.<br>
+                    컨텐츠 간격을 유지하여 본문내용 부분이 길어집니다.
+                </p>
+                <div class="modal_btn">
+                    <button type="button" class="madal_btn green modal_close" onclick="javascript:closeWin();">확인</button>
+                </div>
+                <form name="once_form">
+                    <div class="chk_box lbtn">
+                        <span class="input_chk">
+                            <input type="checkbox" id="termsService1" name="chk_once" class="chk">
+                            <label for="termsService1"><span class="chk_btn"></span>오늘하루 이 창을 열지않음</label>
+                        </span>
+                    </div>
+                </form>
+            <!-- </div> -->
+        </div>
+    </div>
+    <script>
+    cookiedata = document.cookie;
+    if ( cookiedata.indexOf("maindiv=done") < 0 ){
+       document.all['modal_once'].style.display = "block";
+       }
+       else {
+          document.all['modal_once'].style.display = "none";
+    }
+    </script>
+</body>
+</html>

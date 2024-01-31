@@ -1,0 +1,335 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>경기도 청소년 교통비 지원 포탈</title>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../../assets/css/reset.css"/>
+    <link rel="stylesheet" href="../../assets/css/style.css"/>
+    <!-- js -->
+    <script src="../../assets/js/jquery-3.5.1.min.js"></script>
+    <script src="../../assets/js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</head>
+<body>
+    <header class="main_header">
+        <div class="header_inner clearfix">
+            <h1><a href="#" class="logo">
+                <img src="../../assets/images/logo.svg" alt="로고"></a>
+            </h1>
+            <div class="header_login login">
+                <a href=""><span class="user_name">로그아웃</span></a>
+            </div>
+            <!-- Mobile navigation 시작 -->
+            <div class="ham_nav">
+                <a class="button_container open" id="toggle">
+                        <img src="../../assets/images/open.svg" alt="메뉴열기버튼">
+                </a>
+                <div class="overlay" id="overlay">
+                    <div class="overlay_top">
+                        <h1><a href="#" class="ham_logo">
+                            <img src="../../assets/images/logo.svg" alt="로고"></a>
+                        </h1>
+                        <a class="button_container close" id="toggle">
+                            <img src="../../assets/images/close.svg" alt="메뉴닫기버튼">
+                        </a>
+                    </div>
+                    <div class="overlay_middle flex_sb">
+                        <button>로그인</button>
+                        <button>회원가입</button>
+                    </div>
+                    <div class="container">
+                        <ul class="accordion" id="accordion">
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">서비스 안내</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 1</a></li>
+                                    <li><a href="javascript://">submenu 1</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">게시판</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">교통카드 발급</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">마이페이지</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile navigation 끝 -->
+            <!-- Pc navigation 시작 -->
+            <div class="pc_nav">
+                <nav>
+                    <ul class="clearfix">
+                        <li class="dropdown">
+                            <a href="">서비스 안내</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">게시판</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">교통카드 발급</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">마이페이지</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Pc navigation 끝 -->
+        </div>
+    </header>
+    <section class="sub_section2">
+    <div class="board_box">
+        <h2>게시판</h2>
+        <!-- tab영역 시작 -->
+        <div class="tab-wrapper sub_container">
+            <!-- class ono_none 추가되면 1:1문의 사라짐 -->
+            <!-- tab메뉴 시작-->
+            <ul class="tab-menu">
+                <li class="tabs1"><a href="#tabs-1">공지사항</a></li>
+                <li class="tabs2"><a href="#tabs-2" class="active">자주묻는 질문</a></li>
+                <li class="tabs3"><a href="#tabs-3">1:1문의</a></li>
+            </ul>
+            <!-- //tab메뉴 끝-->
+            <!-- tab 내용 시작 -->
+            <div id="tab-content">
+                <!-- 자주묻는 질문 내용 시작-->
+                <div id="tabs-2" class="active tabs-2">
+                    <!-- 게시물이 없을 때 class faq_block 추가 -->
+                    <h3 class="hiddenElem">자주묻는 질문 페이지</h3>
+                    <div class="tabs_content">
+                        <div class="tab_title">
+                            <p>자주묻는 질문</p>
+                        </div>
+                        <form name="" method="" action="">
+                            <!-- 2021.12.21.테스트수정 -->
+                            <div id="bbsSearch" class="bbsSearch2">
+                            <!-- 2021.12.21.테스트수정 -->
+                                <!-- 2021.12.수정 -->
+                                <select class="box1 category" id="">
+                                    <option value="">카테고리</option>
+                                    <option value="">옵션2</option>
+                                    <option value="">옵션3</option>
+                                </select>
+                                <!-- 2021.12.21.테스트수정 -->
+                                <hr class="x_hr">
+                                <!-- //2021.12.21.테스트수정 -->
+                                <!-- //2021.12.수정 -->
+                                <select class="box1" id="">
+                                    <option value="">전체</option>
+                                    <option value="">옵션2</option>
+                                    <option value="">옵션3</option>
+                                </select>
+                                <!-- 2021.12.21.테스트수정 -->
+                                <div class="search_box">
+                                    <input type="text" name="" class="" value="" placeholder="검색어 입력">
+                                    <button><img src="../../assets/images/ico-search.svg" alt="">조회</button>
+                                </div>
+                                <!-- //2021.12.21.테스트수정 -->
+                            </div>
+                        </form>
+                        <article class="main_accordion">
+                            <div class="total tabs-2">Total 25</div>
+                            <!-- 검색결과 없을 때 사라지는 부분 시작-->
+                            <div class="container">
+                                <ul class="accordion" id="accordion2">
+                                    <li class="accordion__list">
+                                        <div class="link2">
+                                            <a href="#" class="link__title">
+                                                <span class="q_txt pc">질문</span>
+                                                <!-- 2021.12.수정 -->
+                                                <span class="q_txt pc category">카테</span>
+                                                <!-- //2021.12.수정 -->
+                                                최근에 경기도로 이사를 왔을 경우 혜택을 받을 수 있나요?
+                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                        <ul class="submenu2">
+                                            <li><a href="javascript://">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita tenetur accusantium, optio dolores labore velit molestias voluptas quae eaque facilis impedit adipisci sunt id, hic ab minus dolor aut minima.
+                                            </a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="accordion__list">
+                                        <div class="link2">
+                                            <a href="#" class="link__title">
+                                                <span class="q_txt pc">질문</span>
+                                                <!-- 2021.12.수정 -->
+                                                <span class="q_txt pc category">카테고리</span>
+                                                <!-- //2021.12.수정 -->
+                                                최근에 경기도로 이사를 왔을 경우 혜택을 받을 수 있나요?
+                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                        <ul class="submenu2">
+                                            <li><a href="javascript://">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita tenetur accusantium, optio dolores labore velit molestias voluptas quae eaque facilis impedit adipisci sunt id, hic ab minus dolor aut minima.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita tenetur accusantium, optio dolores labore velit molestias voluptas quae eaque facilis impedit adipisci sunt id, hic ab minus dolor aut minima.</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="accordion__list">
+                                        <div class="link2">
+                                            <a href="#" class="link__title">
+                                                <span class="q_txt pc">질문</span>
+                                                <!-- 2021.12.수정 -->
+                                                <span class="q_txt pc category">카테고리</span>
+                                                <!-- //2021.12.수정 -->
+                                                최근에 경기도로 이사를 왔을 경우 혜택을 받을 수 있나요?
+                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                        <ul class="submenu2">
+                                            <li><a href="javascript://">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita tenetur accusantium, optio dolores labore velit molestias voluptas quae eaque facilis impedit adipisci sunt id, hic ab minus dolor aut minima.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita tenetur accusantium, optio dolores labore velit molestias voluptas quae eaque facilis impedit adipisci sunt id, hic ab minus dolor aut minima.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita tenetur accusantium, optio dolores labore velit molestias voluptas quae eaque facilis impedit adipisci sunt id, hic ab minus dolor aut minima.</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="accordion__list">
+                                        <div class="link2">
+                                            <a href="#" class="link__title">
+                                                <span class="q_txt pc">질문</span>
+                                                <!-- 2021.12.수정 -->
+                                                <span class="q_txt pc category">카테고리</span>
+                                                <!-- //2021.12.수정 -->
+                                                최근에 경기도로 이사를 왔을 경우 혜택을 받을 수 있나요?
+                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                        <ul class="submenu2">
+                                            <li><a href="javascript://">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita tenetur accusantium, optio dolores labore velit molestias voluptas quae eaque facilis impedit adipisci sunt id, hic ab minus dolor aut minima.</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- 페이징 영역 시작 -->
+                    <div id="paging" class="paging">
+                        <ul>
+                            <li><a href="" class="start"><img src="../../assets/images/ico-arrow-first.svg" alt="first button"><span class="hide">첫페이지</span></a></li>
+                            <li><a href="" class="prev"><img src="../../assets/images/ico-arrow-prev.svg" alt="first button"><span class="hide">이전페이지</span></a></li>
+                        </ul>
+                        <ul class="pad_box">
+                            <li><a href="" class="pad active">1</a></li>
+                            <!-- <li><a href="" class="pad">2</a></li>
+                            <li><a href="" class="pad">3</a></li>
+                            <li><a href="" class="pad">4</a></li>
+                            <li><a href="" class="pad">5</a></li>
+                            <li><a href="" class="pad">6</a></li>
+                            <li><a href="" class="pad">7</a></li>
+                            <li><a href="" class="pad">8</a></li>
+                            <li><a href="" class="pad">9</a></li>
+                            <li><a href="" class="pad">10</a></li> -->
+                        </ul>
+                        <ul class="mo_display">
+                            <li><a href="" class="">1/20</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="" class="next"><img src="../../assets/images/ico-arrow-next.svg" alt="first button"><span class="hide">다음페이지</span></a></li>
+                            <li><a href="" class="end"><img src="../../assets/images/ico-arrow-last.svg" alt="first button"><span class="hide">마지막페이지</span></a></li>
+                        </ul>
+                    </div>
+                    <!-- //페이징 영역 끝 -->
+                    <!-- 검색 결과 없을 때 사라지는 부분 끝 -->
+                    <p class="faq_p">등록된 글이 없습니다</p>
+                    <!-- 검색 결과 없을 때 class block -->
+                </div>
+                <!-- //자주묻는 질문 내용 끝-->
+            </div>
+            <!-- //tab 내용 끝 -->
+        </div>
+        <!-- //tab영역 끝 -->
+    </section>
+    <footer>
+        <div class="footer_nav">
+            <span class="box">
+                <a href="#"><span class="">사이트맵</span></a>
+                <a href="#"><span class="">이용약관</span></a>
+            </span>
+            <a href="#"><span class="">개인정보 수집/이용에 관한 약관</span></a>
+            <a href="#"><span class="">개인정보처리 및 위탁에 관한 안내 약관</span></a>
+            <a href="#"><span class="">개인정보처리방침</span></a>
+        </div>
+        <p class="copy">COPYRIGHT 2013 BY GYEONGGI URBAN INNOVATION<br class="mo"> CORPORATION ALL RIGHTS RESERVED</p>
+        <div class="add">
+            <p>경기도 수원시 권선구 권중로 46&lpar;권선동&rpar; 우편번호 16556</p>
+            <p class="call">문의전화 : 경기도 콜센터 031-120</p>
+        </p>
+    </footer>
+    <script>
+        $(document).ready(function(){
+
+           $('.paging .pad_box li a').click(function(){
+
+               $('.paging .pad_box li a').removeClass('active');
+               $(this).addClass('active');
+              return false;
+           });
+
+        });
+    </script>
+</body>
+</html>

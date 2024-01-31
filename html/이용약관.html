@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>경기도 청소년 교통비 지원 포탈</title>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/swiper.min.css">
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../assets/js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="../assets/js/swiper.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</head>
+
+<body>
+    <header class="main_header">
+        <div class="header_inner clearfix">
+            <h1><a href="#" class="logo">
+                <img src="../assets/images/logo.svg" alt="로고"></a>
+            </h1>
+            <div class="header_login login">
+                <a href=""><span class="user_name">로그아웃</span></a>
+            </div>
+            <!-- Mobile navigation 시작 -->
+            <div class="ham_nav">
+                <a class="button_container open" id="toggle">
+                        <img src="../assets/images/open.svg" alt="메뉴열기버튼">
+                </a>
+                <div class="overlay" id="overlay">
+                    <div class="overlay_top">
+                        <h1><a href="#" class="ham_logo">
+                            <img src="../assets/images/logo.svg" alt="로고"></a>
+                        </h1>
+                        <a class="button_container close" id="toggle">
+                            <img src="../assets/images/close.svg" alt="메뉴닫기버튼">
+                        </a>
+                    </div>
+                    <div class="overlay_middle flex_sb">
+                        <button>로그인</button>
+                        <button>회원가입</button>
+                    </div>
+                    <div class="container">
+                        <ul class="accordion" id="accordion">
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">서비스 안내</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 1</a></li>
+                                    <li><a href="javascript://">submenu 1</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">게시판</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">교통카드 발급</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">마이페이지</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile navigation 끝 -->
+            <!-- Pc navigation 시작 -->
+            <div class="pc_nav">
+                <nav>
+                    <ul class="clearfix">
+                        <li class="dropdown">
+                            <a href="">서비스 안내</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">게시판</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">교통카드 발급</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">마이페이지</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Pc navigation 끝 -->
+        </div>
+    </header>
+    <section class="mypage_section main_terms">
+
+        <!-- 2021.12.24.테스트수정 -->
+        <div class="terms_top">
+            <h2>이용약관</h2>
+            <select name="" id="">
+                <option value="">가나다라마바사아자차카타파하갸냐</option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+        </div>
+        <!-- //2021.12.24.테스트수정 -->
+        
+        <div class="box" tabindex="0">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quibusdam distinctio assumenda dolore! Accusantium inventore molestias dolorem. Dolore, veritatis, nam quis suscipit ab, deserunt praesentium quaerat magni sunt quibusdam vero.
+            Nisi accusamus quia dicta quas. Animi veritatis cupiditate necessitatibus, quaerat ut velit quod aut, ipsum vitae culpa harum nesciunt perferendis commodi aliquid iusto odit deleniti eius rem impedit in! Ullam.
+        </div>
+    </section>
+    <footer>
+        <div class="footer_nav">
+            <span class="box">
+                <a href="#"><span class="">사이트맵</span></a>
+                <a href="#"><span class="">이용약관</span></a>
+            </span>
+            <a href="#"><span class="">개인정보 수집/이용에 관한 약관</span></a>
+            <a href="#"><span class="">개인정보처리 및 위탁에 관한 안내 약관</span></a>
+            <a href="#"><span class="">개인정보처리방침</span></a>
+        </div>
+        <p class="copy">COPYRIGHT 2013 BY GYEONGGI URBAN INNOVATION<br class="mo"> CORPORATION ALL RIGHTS RESERVED</p>
+        <div class="add">
+            <p>경기도 수원시 권선구 권중로 46&lpar;권선동&rpar; 우편번호 16556</p>
+            <p class="call">문의전화 : 경기도 콜센터 031-120</p>
+        </p>
+    </footer>
+</body>
+
+</html>

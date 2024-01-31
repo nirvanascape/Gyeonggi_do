@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>경기도 청소년 교통비 지원 포탈</title>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="../../assets/css/swiper.min.css">
+    <!-- js -->
+    <script src="../../assets/js/jquery-3.5.1.min.js"></script>
+    <script src="../../assets/js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="../../assets/js/swiper.min.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</head>
+
+<body>
+    <button type="button" onclick="openLayer('modal')">클릭</button>
+    <!-- Modal시작 -->
+    <!-- 모달이 열릴 부분에 onclick="openLayer('id')" 추가 -->
+    <div id="modal" class="modal signup" style="display:block;">
+        <!-- Modal 내용 -->
+        <div class="modal-content">
+            <h2 class="signup_title">은행인증서 발급 및 타 정부 지원 사업 대상자 <span>가입 제한 안내</span></h2>
+            <a href="" class="close_btnB"></a>
+            <div class="scroll">
+                <div class="modal_inner">
+                    <p class="title">은행인증서 안내</p>
+                    <div class="bottom">
+                        <div class="middle">
+                            <p>
+                                ① 회원가입 및 거주지 정보 확인을 위해 공인인증서가 필요합니다.
+                            </p>
+                            <p>
+                                ② 현재 은행인증서를 보유하지 않고, 청소년 본인이 세대주일 경우 콜센터 1644-0006에서 상담해 드립니다.
+                            </p>
+                            <p class="onlypc">
+                                ③ 해외 백신(보안) 프로그램 이용 시 인증서 인증 프로그램을 불법 프로그램으로 간주하여 삭제하는 경우가 생길 수 있습니다. 해외 백신을 잠시 꺼두시거나, 백신 프로그램에서 예외 설정해 주시기 바랍니다.<br><br>
+
+                                &#8251; 국산 백신 이용 시에는 문제가 없으나 삭제되는 경우엔 잠시 꺼주십시오.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- <div class="bottom2">
+                    <div class="bottom_promotion">
+                        <p class="bullet">
+                            회원가입 및 거주지 정보 확인을 위해 공인인증서가 필요합니다.
+                        </p>
+                        <p class="bullet">
+                            현재 공인인증서를 보유하지 않고, 청소년 본인이 세대주일 경우 콜센터 031-120에서 상담해 드립니다.
+                        </p>
+                            <p class="bullet red">
+                                기초생활수급자의 경우 수급비 중지 및 감액 가능성이 있으니 반드시 교통비 신청 전 해당 읍면동의 사회복지 담당자와 상담하시기 바랍니다. 기타 타 정부지원 사업 대상자의 경우 가입이 제한될 수 있습니다.
+                            </p>
+                            <p class="service_popup_text">
+                                ①&nbsp;고용노동부 청년구직활동지원금<br>
+                                ②&nbsp;산업통상자원부 산업단지 중소기업 청년교통비 지원<br>
+                                ③&nbsp;수원시 취업준비청년 교통비 지원<br>
+                                ④&nbsp;성남시 지역주도형 청년일자리사업 교통비 지원<br>
+                                ⑤&nbsp;화성시 무상교통비 지원<br>
+                                ⑥&nbsp;평택시 청년구직자 교통비 지원<br>
+                                ⑦&nbsp;오산시 저소득 한부모가족 교통비 지원<br>
+                                ⑧&nbsp;여주시 청년일자리 창출지원<br>
+                                ⑨&nbsp;과천시 중고등학생 관외 통학교통비 지원<br>
+                                ⑩&nbsp;가평군 학생 교통비 지원<br>
+                                ⑪&nbsp;학교 밖 청소년 교통비 지원 등<br>
+                                <span>&#8251; 단, 국토교통부 광역알뜰 교통카드는 중복지원 가능</span>
+                            </p>
+                        </div>
+                    </div> -->
+                    <p class="title">타 정부 지원 사업 대상자 가입 제한 안내</p>
+                    <div class="middle mb1">
+                        <p class="red">
+                            청소년 교통비는 공적이전소득에 포함되어 청소년 교통비 지원금 신청 시 다른 정부 지원금 수급에 제한 및 자격 탈락이 있을 수 있습니다.
+                            반드시 교통비 신청 전 해당 읍면동의 사회복지 담당자와 상담하시기 바랍니다.
+                        </p>
+                    </div>
+                    <div class="middle middle2">
+                        <p class="service_popup_text">
+                            ①&nbsp;수원시 취업준비청년 교통비 지원<br>
+                            ②&nbsp;성남시 지역주도형 청년일자리사업 교통비 지원<br>
+                            ③&nbsp;평택시 청년구직자 교통비 지원<br>
+                            ④&nbsp;경기도 교육청 특수교육대상자 교통비 지원<br>
+                            ⑤&nbsp;여주시 청년일자리 창출지원<br>
+                            ⑥&nbsp;과천시 중고등학생 관외 통학교통비 지원<br>
+                            ⑦&nbsp;가평군 학생 교통비 지원<br>
+                            ⑧&nbsp;학교 밖 청소년 교통비 지원 등<br>
+                            ⑨&nbsp;화성시 무상교통 지원 사업<br>
+                            <span style="color:#fff; font-weight:bold;">&#8251; 단, 국토교통부 광역알뜰 교통카드는 중복지원 가능</span>
+                        </p>
+                    </div>
+                    <div class="modal_btn">
+                        <button class="blue" onclick="closeLayer('modal')">취소</button>
+                        <button class="green">확인</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal2" class="modal mypage_modal mypage_modal1 pop_pay_select">
+        <!-- Modal 내용 -->
+        <div class="modal-content service_notice">
+            <!-- 스크롤이 필요할 경우 클래스 modal-content-scroll 추가 -->
+            <div class="modal_top_outer">
+                <div class="modal_top clearfix">
+                    <h1 class="modal_title pay">제외 대상 사업 안내</h1>
+                    <!-- <img src="../../assets/images/close.svg" alt="닫기버튼" class="close" onclick="closeLayer('modal2')"> -->
+                </div>
+            </div>
+            <div class="scroll">
+                <h2>제외 대상 사업 안내</h2>
+                <div class="board service_mo_p">
+                    <p class="service_popup_text">
+                        ①&nbsp;고용노동부 청년구직활동지원금<br>
+                        ②&nbsp;산업통상자원부 산업단지 중소기업 청년교통비 지원<br>
+                        ③&nbsp;수원시 취업준비청년 교통비 지원<br>
+                        ④&nbsp;성남시 지역주도형 청년일자리사업 교통비 지원<br>
+                        ⑤&nbsp;화성시 무상교통비 지원<br>
+                        ⑥&nbsp;평택시 청년구직자 교통비 지원<br>
+                        ⑦&nbsp;오산시 저소득 한부모가족 교통비 지원<br>
+                        ⑧&nbsp;여주시 청년일자리 창출지원<br>
+                        ⑨&nbsp;과천시 중고등학생 관외 통학교통비 지원<br>
+                        ⑩&nbsp;가평군 학생 교통비 지원<br>
+                        ⑪&nbsp;학교 밖 청소년 교통비 지원 등<br>
+                        <span>&#8251; 단, 국토교통부 광역알뜰 교통카드는 중복지원 가능</span>
+                    </p>
+                    <div class="bottom_promotion servive mt0 mb1">
+                        <p class="bullet pd0">기초생활 수급자의 경우 수급중지 및 감액 가능성이 있으니 교통비 신청 전 읍면동 사회복지 담당과 상의하시기 바랍니다.</p>
+                    </div>
+                </div>
+                <div class="btn_area pay">
+                    <button type="button" class="green" onclick="closeLayer('modal2')">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

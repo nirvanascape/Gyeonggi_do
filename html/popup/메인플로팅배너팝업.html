@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>경기도 청소년 교통비 지원 관리자 시스템</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../../assets/css/reset.css"/>
+    <link rel="stylesheet" href="../../assets/css/style.css"/>
+    <!-- js -->
+    <script src="../../assets/js/jquery-3.5.1.min.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</head>
+<body>
+    <input type="text">
+    <button type="button" onclick="openLayer('modal')">클릭</button>
+    <div id="modal" class="modal mypage_modal mypage_modal1">
+        <!-- Modal 내용 -->
+        <div class="modal-content">
+            <!-- 스크롤이 필요할 경우 클래스 modal-content-scroll 추가 -->
+            <div class="modal_top_outer">
+                <div class="modal_top clearfix">
+                    <h1 class="modal_title pay">경기 버스 검색 방법</h1>
+                    <a href="" class="close_btnB"></a>
+                </div>
+            </div>
+            <div class="scroll">
+                <div class="bottom">
+                    <p style="padding:0;">
+                        내가 이용한 버스가 경기버스인지 궁금하세요?<br>
+                        경기버스정보에서 확인하실 수 있습니다.
+                    </p>
+                    <div class="btn_area pay mt1" style="width:100%;">
+                        <button class="green">경기버스정보 홈페이지 바로가기</button>
+                    </div>
+
+                    <ol class="depth_list depth_1">
+                        <li>
+                            <span>①</span>
+                            경기버스정보 홈페이지 gbis.go.kr 접속
+                            (구글 플레이 스토어 혹은 앱 스토어에서
+                            ‘경기버스정보’ APP’을 다운로드하셔도 
+                            됩니다.) 
+                        </li>
+                        <li>
+                            <span>②</span>
+                            검색창에 노선번호를 입력 후 검색하세요.
+                            <img src="../../assets/images/bus_ssearch_img01.png" width="100%" alt="경기버스정보 사이트의 검색창 이미지">
+                        </li>
+                        <li>
+                            <span>③</span>
+                            통합검색 결과에서 버스 정보를 확인하세요.
+                            <img src="../../assets/images/bus_ssearch_img02.png" width="100%" alt="경기버스정보 사이트의 버스검색창 이미지">
+                            위 화면과 같이 버스 검색결과가 <strong>1건 이상 있으면,
+                            경기도 청소년 교통비 지원 범위에 해당합니다.</strong><br><br>
+
+                            아래 화면과 같이 버스 검색결과가 <strong>0건이면,
+                            경기도 청소년 교통비 지원 범위에 해당하지 않습니다.</strong>
+                            <img src="../../assets/images/bus_ssearch_img03.png" width="100%" alt="경기버스정보 사이트의 버스검색창 이미지">
+                        </li>
+                    </ol>
+                    <p><strong>이용 문의</strong> 031 - 120</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

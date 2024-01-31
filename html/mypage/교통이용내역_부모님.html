@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>경기도 청소년 교통비 지원 포탈</title>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../assets/css/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" href="../../assets/css/reset.css"/>
+    <link rel="stylesheet" href="../../assets/css/style.css"/>
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../../assets/js/jquery-2.1.1.min.js"></script>
+    <script src="../../assets/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/moment-with-locales.js"></script>
+    <script src="../../assets/js/bootstrap-datetimepicker.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</head>
+<body>
+    <div title="스킵메뉴" class="skip">
+            <a class="body_contents_shortcuts" style="color: rgb(255, 255, 255);" href="#userMainLayout">본문 바로가기</a>
+    </div>
+    <header class="main_header">
+        <div class="header_inner clearfix">
+            <h1><a href="#" class="logo">
+                <img src="../../assets/images/logo.svg" alt="로고"></a>
+            </h1>
+            <div class="header_login login">
+                <a href=""><span class="user_name">로그아웃</span></a>
+            </div>
+            <!-- Mobile navigation 시작 -->
+            <div class="ham_nav">
+                <a class="button_container open" id="toggle">
+                        <img src="../../assets/images/open.svg" alt="메뉴열기버튼">
+                </a>
+                <div class="overlay" id="overlay">
+                    <div class="overlay_top">
+                        <h1><a href="#" class="ham_logo">
+                            <img src="../../assets/images/logo.svg" alt="로고"></a>
+                        </h1>
+                        <a class="button_container close" id="toggle">
+                            <img src="../../assets/images/close.svg" alt="메뉴닫기버튼">
+                        </a>
+                    </div>
+                    <div class="overlay_middle flex_sb">
+                        <button>로그인</button>
+                        <button>회원가입</button>
+                    </div>
+                    <div class="container">
+                        <ul class="accordion" id="accordion">
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">서비스 안내</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 1</a></li>
+                                    <li><a href="javascript://">submenu 1</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">게시판</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">교통카드 발급</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">마이페이지</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile navigation 끝 -->
+            <!-- Pc navigation 시작 -->
+            <div class="pc_nav">
+                <nav>
+                    <ul class="clearfix">
+                        <li class="dropdown">
+                            <a href="">서비스 안내</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">게시판</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">교통카드 발급</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">마이페이지</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Pc navigation 끝 -->
+        </div>
+    </header>
+    <section class="mypage_section step">
+        <div class="board_box mypage">
+            <h2>마이페이지</h2>
+            <ul class="step_ck">
+                <li class="active"><a href="">My Home</a></li>
+                <li><a href="">교통카드 등록</a></li>
+                <li><a href="">지역화폐 등록</a></li>
+                <li><a href="">지원금 신청</a></li>
+                <li><a href="">교통 이용 내역</a></li>
+                <li><a href="">지원금 신청 내역</a></li>
+                <li><a href="">개인정보수정</a></li>
+            </ul>
+        </div>
+        <div class="my_step_box">
+            <div class="date_box">
+                <h3 class="ano_h3 tAl" id="userMainLayout">교통이용 내역 조회</h3>
+                <p class="tAl">
+                    경기도 청소년 교통비 지원 포털에서는 등록하신 교통카드의 경기도 대중교통을 포함한 월 단위 이용금액만 제공합니다.<br>
+                    하반기 신청 시 상반기 지원금액을 소급하여 지원합니다.(연간 최대 12만원)
+                </p>
+                <p class="tAl" style="color: red; font-weight: bold; font-size: 21px; padding-top: 5px;">
+                    교통카드 이용금액 및 지급액은 정산 후 확인 가능합니다.<br>
+                    ※ 신청 마감 후 심사를 거쳐 정산이 이루어집니다. 정산 및 지급 관련 일정은 별도 공지 예정.
+                </p>
+                <div class="date_box_inner">
+                    <div class="form_area children_select_box">
+                        <select id="" class="lselect" title="조회할 자녀를 선택">
+                            <option value="">자녀 선택</option>
+                            <option value="">option2</option>
+                            <option value="">option3</option>
+                        </select>
+                    </div>
+                    <div class="date2 par">
+                        <div class="input-group input-group1 date">
+                            <input type="text" class="date_input" id="datetimepicker6" required readonly="readonly"/>
+                        </div>
+                        <span class="hyp"> &hyphen; </span>
+                        <div class="input-group input-group2 date">
+                            <input type="text" class="date_input" id="datetimepicker7" required readonly="readonly" />
+                        </div>
+                    </div>
+                    <button class="search_btn_date green"><img alt="" src="../../assets/images/ico-search.svg">조회</button>
+                </div>
+            </div>
+
+            <div class="money_box"><strong>예상 지급액 60,000 원</strong><span>ㅣ</span><strong>총 이용금액 235,000 원</strong></div>
+            <!-- 게시판 영역 시작 -->
+            <div class="cc">
+                <div class="board">
+                    <!-- 게시물 없을 때 class empty 추가 -->
+                    <table class="mypage_table traffic">
+                        <caption>교통이용내역</caption>
+                        <thead class="table_box board_top">
+                            <tr class="title">
+                                <th scope="col">번호</th>
+                                <th scope="col">이용월</th>
+                                <th scope="col">이용금액</th>
+                                <th scope="col">예상 지급액</th>
+                            </tr>
+                        </thead>
+                        <!-- 게시물 없을 때 사라지는 영역 시작 -->
+                        <tbody class="no_text_none">
+                            <tr class="body">
+                                <td data-label="번호">1</td>
+                                <td data-label="이용월">2020-06</td>
+                                <td data-label="이용금액">0 원</td>
+                                <td data-label="예상 지급액">19,200 원</td>
+                            </tr>
+                            <tr class="body">
+                                <td data-label="번호">2</td>
+                                <td data-label="이용월">2020-06</td>
+                                <td data-label="이용금액">4000 원</td>
+                                <td data-label="예상 지급액">19,200 원</td>
+                            </tr>
+                            <tr class="body">
+                                <td data-label="번호">3</td>
+                                <td data-label="이용월">2020-06</td>
+                                <td data-label="이용금액">64,000 원</td>
+                                <td data-label="예상 지급액">19,200 원</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- //게시물 없을 때 사라지는 영역 끝-->
+                    <p class="no_text_block">조회 결과가 없습니다.</p>
+                </div>
+            </div>
+            <!-- //게시판 영역 끝 -->
+            <div class="bottom_promotion mb2">
+                <p class="bullet">
+                    지원금 계산 : 만 13~18세 : 교통이용금액 × 30% / 만 19~23세 : 교통 이용금액 × 15%
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_nav">
+            <span class="box">
+                <a href="#"><span class="">사이트맵</span></a>
+                <a href="#"><span class="">이용약관</span></a>
+            </span>
+            <a href="#"><span class="">개인정보 수집/이용에 관한 약관</span></a>
+            <a href="#"><span class="">개인정보처리 및 위탁에 관한 안내 약관</span></a>
+            <a href="#"><span class="">개인정보처리방침</span></a>
+        </div>
+        <p class="copy">COPYRIGHT 2013 BY GYEONGGI URBAN INNOVATION<br class="mo"> CORPORATION ALL RIGHTS RESERVED</p>
+        <div class="add">
+            <p>경기도 수원시 권선구 권중로 46&lpar;권선동&rpar; 우편번호 16556</p>
+            <p class="call">문의전화 : 경기도 콜센터 031-120</p>
+        </p>
+    </footer>
+    <script type="text/javascript">
+		$(function () {
+			$('#datetimepicker6').datetimepicker({
+				  defaultDate: "",
+				  viewMode: 'months',
+				  //viewMode: 'years',
+				  format: 'YYYY/MM',
+				  locale:'ko',
+                  ignoreReadonly: true
+				});
+			$('#datetimepicker7').datetimepicker({
+				useCurrent: false,
+				format: 'YYYY/MM',
+                viewMode: 'months',
+                //viewMode: 'years',
+                locale:'ko',
+                ignoreReadonly: true
+			});
+			$("#datetimepicker6").on("dp.change", function (e) {
+				$('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+			});
+			$("#datetimepicker7").on("dp.change", function (e) {
+				$('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+			});
+		});
+	</script>
+</body>
+</html>

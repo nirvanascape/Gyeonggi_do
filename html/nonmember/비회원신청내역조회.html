@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no" />
+    <title>경기도 청소년 교통비 지원 포탈</title>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../../assets/css/reset.css"/>
+    <link rel="stylesheet" href="../../assets/css/style.css"/>
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../../assets/js/jquery-2.1.1.min.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header class="main_header">
+            <div class="header_inner clearfix">
+                <h1><a href="#" class="logo">
+                    <img src="../../assets/images/logo.svg" alt="로고"></a>
+                </h1>
+                <div class="header_login login">
+                    <a href=""><span class="user_name"></span></a>
+                </div>
+            </div>
+        </header>
+        <section class="mypage_section step">
+            <div class="my_step_box">
+                <div class="list_box_both">
+                    <div class="list_top bbnone">
+                        <h3 class="ano_h3 tAl">비회원 신청 내역 조회</h3>
+                    </div>
+                    <div class="form_area btn">
+                        <a href="#" id="" class=""><button type="button" class="lbtn green">신청서 보기/수정</button></a>
+                    </div>
+                </div>
+                <!-- <div class="date_box non_date_box">
+                    <div class="form_area">
+                        <h3 class="title">
+                            <label for="">이름</label>
+                        </h3>
+                        <div>
+                            <input type="text" id="" title="이름" class="" value="홍길동" readonly>
+                        </div>
+                    </div>
+                    <div class="form_area">
+                        <h3 class="title">
+                            <label for="">지역</label>
+                        </h3>
+                        <div>
+                            <input type="text" id="" title="지역" class="" value="수원시" readonly>
+                        </div>
+                    </div>
+                    <div class="form_area">
+                        <h3 class="title">
+                            <label for="">휴대폰 번호</label>
+                        </h3>
+                        <div>
+                            <input type="text" id="" title="휴대폰 번호" class="" value="010 - 1234 - 1234" readonly>
+                        </div>
+                    </div>
+
+                </div> -->
+                <!-- 게시판 영역 시작 -->
+                <div class="cc">
+                    <div class="board mt2">
+                        <!-- 게시물 없을 때 class empty 추가 -->
+                        <table class="mypage_table nonmember">
+                            <caption>지원금 신청내역</caption>
+                            <thead class="table_box board_top">
+                                <tr class="title">
+                                    <th scope="col">지역</th>
+                                    <th scope="col">주소</th>
+                                    <th scope="col">휴대폰번호</th>
+                                    <th scope="col">신청구분</th>
+                                    <th scope="col">지원금신청제목</th>
+                                    <th scope="col">교통카드번호</th>
+                                    <th scope="col">지역화폐번호</th>
+                                    <th scope="col">교통금액계산</th>
+                                    <th scope="col">교통금액지급</th>
+                                    <th scope="col">일자</th>
+                                    <th scope="col">처리상태</th>
+                                    <th scope="col">비고</th>
+                                </tr>
+                            </thead>
+                            <!-- 게시물 없을 때 사라지는 영역 시작 -->
+                            <tbody class="no_text_none">
+                                <tr class="body">
+                                    <td data-label="지역">남양주시</td>
+                                    <td data-label="주소">남양주시 행복동 행복아파트 101호 1002호</td>
+                                    <td data-label="휴대폰번호">010-000-0000</td>
+                                    <td data-label="신청구분">분실카드신청</td>
+                                    <td data-label="지원금신청제목">2020년 상반기</td>
+                                    <td data-label="교통카드번호">0000-0000-0000-0000</td>
+                                    <td data-label="지역화폐번호">0000-0000-0000-0000</td>
+                                    <td data-label="교통금액계산">1,100,000</td>
+                                    <td data-label="교통급액지급">1,100,000</td>
+                                    <td data-label="일자">2020-07-31</td>
+                                    <td data-label="처리상태">비회원신청</td>
+                                    <td data-label="비고">교통카드처리불가지역화폐불가네네네네네네네네</td>
+                                </tr>
+                                <tr class="body">
+                                    <td data-label="지역">의정부시</td>
+                                    <td data-label="주소">남양주시 행복동 행복아파트 101호 1002호</td>
+                                    <td data-label="휴대폰번호">010-000-0000</td>
+                                    <td data-label="신청구분">분실카드</td>
+                                    <td data-label="지원금신청제목">aaa</td>
+                                    <td data-label="교통카드번호">0000-0000-0000-0000</td>
+                                    <td data-label="지역화폐번호">0000-0000-0000-0000</td>
+                                    <td data-label="교통금액계산">1,100,000</td>
+                                    <td data-label="교통급액지급">1,100,000</td>
+                                    <td data-label="일자">2020-07-31</td>
+                                    <td data-label="처리상태">aaa</td>
+                                    <td data-label="비고">교통카드처리불가지역화폐불가네네네네네네네네</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- //게시물 없을 때 사라지는 영역 끝-->
+                        <p class="no_text_block">조회 결과가 없습니다.</p>
+                    </div>
+                </div>
+                <!-- //게시판 영역 끝 -->
+                <div class="bottom_promotion mb0_5">
+                    <p class="bullet">
+                        지원금 계산 : 만13~18세 : 교통이용금액 × 30% / 만19~23세 : 교통 이용금액 × 15%
+                    </p>
+                </div>
+                <div class="bottom_promotion mb0_5">
+                    <p class="bullet">
+                        처리상태 안내<br><br>
+                        - 신청 오류 : 경기도 미 거주자, 주민등록번호/휴대폰/교통카드/지역화폐 정보 입력 오류<br>
+                        - 정상 신청처리 : 신청서 정보 정상 처리확인<br>
+                        - 교통내역 수집 중 : 교통 이용내역 정보 수집중<br>
+                        - 지원금 계산 중 : 교통 이용금에 연령별 지원금 비율을 적용하여 정산<br>
+                        - 지원금 지급 요청 : 확정된 지원금을 지급 요청
+                    </p>
+                </div>
+                <div class="bottom_promotion mb0_5">
+                    <p class="bullet">
+                        주요 처리 일정 안내<br><br>
+                        신청서 검증 : 8월 5일부터 확인 가능<br>
+                        교통 이용 금액 : 8월 10일부터 조회 가능<br>
+                        예상 지원금 계산 : 8월 10일부터 조회 가능<br>
+                        지원금 지급 : 8월 하순부터 지급 시작예정<br>
+                        * 예상 일정으로 실제 일정과 차이가 있을 수 있습니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer_nav">
+                <span class="box">
+                    <a href="#"><span class="">사이트맵</span></a>
+                    <a href="#"><span class="">이용약관</span></a>
+                </span>
+                <a href="#"><span class="">개인정보 수집/이용에 관한 약관</span></a>
+                <a href="#"><span class="">개인정보처리 및 위탁에 관한 안내 약관</span></a>
+                <a href="#"><span class="">개인정보처리방침</span></a>
+            </div>
+            <p class="copy">COPYRIGHT 2013 BY GYEONGGI URBAN INNOVATION<br class="mo"> CORPORATION ALL RIGHTS RESERVED</p>
+            <div class="add">
+                <p>경기도 수원시 권선구 권중로 46&lpar;권선동&rpar; 우편번호 16556</p>
+            </div>
+            <div class="tel">
+                <p>청소년 교통비 지원 사업 문의  &colon; <br class="mo">경기도 콜센터 031-120</p>
+                <p>청소년 교통비 지원 포털 시스템 문의 &colon; <br class="mo">1644-0006 &lpar;상담시간 &colon; 평일 09:00 &sim; 18:00&rpar;</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

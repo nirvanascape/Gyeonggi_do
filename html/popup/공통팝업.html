@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+
+
+    <!-- Js -->
+    <script src="../../assets/js/jquery-3.5.1.min.js"></script>
+    <script src="../../assets/js/jquery-1.12.4.js"></script>
+    <script src="../../assets/js/main.js"></script>
+
+    <style>
+
+        /*개발팀과 경로 지정되는 depth다름. 개발팀은 공통부분 따로 떼서 사용함 수정하거나 추가할 때 경로 확인요망*/
+        /* CSS파일에 주가될 부분 시작 */
+
+        /*사용자, 관리자 공통 팝업*/
+        .blind{position:absolute; clip:rect(0 0 0 0); width:1px; height:1px; margin:-1px; overflow:hidden;}
+        /*layerpopup*/
+        .layer_popup{display:none;}
+        .layer_popup.on{display:block;}
+        .layer_background{position:fixed; width:100%; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,.6); z-index:200; overflow-x:hidden;}
+        .layer_content{display:flex; position:fixed; width:19rem; padding:.5rem .5rem 0; height:15rem; flex-direction:column; justify-content:center; left:50%; top:50%; transform:translate(-50%, -50%);  align-items:center; background:#fff; border-radius:.1rem; box-sizing: content-box; }
+        .layer_top{display:flex; width:90%; padding:0 5% 1rem; justify-content: space-between; align-items: center; border-bottom:1px solid #d9d9d9; box-sizing: content-box;}
+        .layer_title_text{width:85%; font-size:1rem; font-weight:bold; color:#333; box-sizing: content-box;}
+        .layer_content_text{width:90%; padding:2rem 1rem; height:3rem; font-size:1rem; text-align: center; overflow-y:auto; box-sizing: content-box;}
+        /*button*/
+        .layer_close{display:block; width:1.5rem; height:1.5rem; background-image: url(../../assets/images/close.svg); background-repeat: no-repeat; background-position: center; background-size: cover;}
+        /*이미지경로 css에 들어갈 때 /assets제외*/
+        .layer_popup .btn_area_de{width:90%; display:flex; justify-content:center; margin:0 auto; flex-wrap: wrap; box-sizing: content-box;}
+        .btn_area_de.btn1 a{display:block; width:100%; height:2rem; margin-bottom:.5rem; line-height:2rem; text-align:center; text-decoration: none;}
+        .btn_area_de.btn2 a{display:block; width:47%; height:2rem; line-height:2rem; text-align:center; text-decoration: none;}
+        .btn_area_de.btn2 a ~ a{margin-left:5%;}
+        a.white{border:1px solid #007C88; color:#007C88; font-size:.8rem;}
+        a.blue{background: #007C88; color:#fff; font-size:.8rem;}
+
+
+        @media (max-width:460px) {
+            .layer_content{width:80%;}
+        }
+
+        /* //CSS파일에 주가될 부분 끝 */
+
+    </style>
+
+</head>
+<body>
+    <button type="button" style="display:block; margin:0 auto; padding:20px 30px;" onclick="openLayer('layer_popup')">Click</button>
+
+
+    <div id="layer_popup" class="layer_popup layer_background" style="display:block;">
+
+        <div class="layer_content">
+
+            <div class="layer_top">
+                <h2 class="layer_title_text">
+                    제목이 들어갑니다
+                </h2>
+                <a href="#" role="button" class="layer_close" onclick="closeLayer('layer_popup')">
+                    <span class="blind">닫기버튼</span>
+                </a>
+            </div>
+
+            <p class="layer_content_text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+
+            <span class="btn_area_de btn2">
+                <!-- <a href="" role="button" class="white" onclick="closeLayer('layer_popup')">확인</a> -->
+                <a href="" role="button" class="blue" onclick="closeLayer('layer_popup')">확인</a>
+            </span>
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>

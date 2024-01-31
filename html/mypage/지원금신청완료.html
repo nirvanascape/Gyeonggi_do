@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>경기도 청소년 교통비 지원 포탈</title>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../../assets/css/reset.css"/>
+    <link rel="stylesheet" href="../../assets/css/style.css"/>
+    <link rel="stylesheet" href="../../assets/css/swiper.min.css">
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../../assets/js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="../../assets/js/swiper.min.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</head>
+<body>
+    <header class="main_header">
+        <div class="header_inner clearfix">
+            <h1><a href="#" class="logo">
+                <img src="../../assets/images/logo.svg" alt="로고"></a>
+            </h1>
+            <div class="header_login login">
+                <a href=""><span class="user_name">로그아웃</span></a>
+            </div>
+            <!-- Mobile navigation 시작 -->
+            <div class="ham_nav">
+                <a class="button_container open" id="toggle">
+                        <img src="../../assets/images/open.svg" alt="메뉴열기버튼">
+                </a>
+                <div class="overlay" id="overlay">
+                    <div class="overlay_top">
+                        <h1><a href="#" class="ham_logo">
+                            <img src="../../assets/images/logo.svg" alt="로고"></a>
+                        </h1>
+                        <a class="button_container close" id="toggle">
+                            <img src="../../assets/images/close.svg" alt="메뉴닫기버튼">
+                        </a>
+                    </div>
+                    <div class="overlay_middle flex_sb">
+                        <button>로그인</button>
+                        <button>회원가입</button>
+                    </div>
+                    <div class="container">
+                        <ul class="accordion" id="accordion">
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">서비스 안내</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 1</a></li>
+                                    <li><a href="javascript://">submenu 1</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">게시판</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">교통카드 발급</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">마이페이지</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile navigation 끝 -->
+            <!-- Pc navigation 시작 -->
+            <div class="pc_nav">
+                <nav>
+                    <ul class="clearfix">
+                        <li class="dropdown">
+                            <a href="">서비스 안내</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">게시판</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">교통카드 발급</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">마이페이지</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Pc navigation 끝 -->
+        </div>
+    </header>
+    <section class="mypage_section step">
+        <div class="board_box mypage">
+            <h2>마이페이지</h2>
+            <ul class="step_ck">
+                <li><a href="" >신청단계</a></li>
+                <li><a href="">교통카드 등록</a></li>
+                <li><a href="">지역화폐 등록</a></li>
+                <li class="active"><a href="">지원금 신청</a></li>
+                <li><a href="">교통 이용 내역</a></li>
+                <li><a href="">지원금 신청 내역</a></li>
+                <li><a href="">개인정보수정</a></li>
+            </ul>
+        </div>
+        <h3 class="border_h3 done">지원금 신청</h3>
+        <div class="my_step_box">
+            <div class="support_fund">
+                <div class="complate_message">
+                    <img class="complate" src="../../assets/images/complate.png" alt="">
+                    <h2 class="title">지원금 신청완료 !</h2>
+                    <p class="title_txt">
+                        <!-- 2021.12.수정 -->
+                        등록하신 교통카드 및 지역화폐 심사과정을 거쳐
+                        정산 처리 후 지급됩니다.<br><br>
+                        신청 현황 및 지급 내역은<br>
+                        <a href="">지원금 신청 내역</a>에서 확인 가능합니다.
+                        <!-- //2021.12.수정 -->
+                    </p>
+                </div>
+
+                <form action="" method="" action="">
+                    <!-- 28개 시 부분 시작 -->
+                    <div class="form_area">
+                        <h3 class="title">
+                            <label for="">이름</label>
+                        </h3>
+                        <div>
+                            <input type="text" title="이름" class="" value="홍길동" readonly>
+                        </div>
+                    </div>
+                    <div class="form_area">
+                        <h3 class="title">
+                            <label for="" class="star">거주 지역</label>
+                        </h3>
+                        <div>
+                            <input type="text" title="거주 지역" class="" value="" readonly>
+                        </div>
+                    </div>
+
+                    <!-- 수정된 부분 -->
+                    <hr class="x_hr">
+                    <div class="form_area">
+                        <h3 class="title">
+                            <label for="num">1번 교통 카드 번호</label>
+                        </h3>
+                        <div class="box_2_box select">
+                            <input type="text" id="num" title="1번 교통 카드 번호 첫 4자리 숫자" class="box_4s support" placeholder="" readonly>
+                            <input type="text" title="1번 교통 카드 번호 두번째 4자리 숫자" class="box_4s support" placeholder="" readonly>
+                            <input type="text" title="1번 교통 카드 번호 세번째 4자리 숫자" class="box_4s support" placeholder="" readonly>
+                            <input type="text" title="1번 교통 카드 번호 네번째 4자리 숫자" class="box_4s support" placeholder="" readonly>
+                        </div>
+                    </div>
+                    <div class="form_area">
+                        <h3 class="title">
+                            <label for="num">2번 교통 카드 번호</label>
+                        </h3>
+                        <div class="box_2_box select">
+                            <input type="text" id="num" title="2번 교통 카드 번호 첫 4자리 숫자" class="box_4s support" placeholder="" readonly>
+                            <input type="text" title="2번 교통 카드 번호 두번째 4자리 숫자" class="box_4s support" placeholder="" readonly>
+                            <input type="text" title="2번 교통 카드 번호 세번째 4자리 숫자" class="box_4s support" placeholder="" readonly>
+                            <input type="text" title="2번 교통 카드 번호 네번째 4자리 숫자" class="box_4s support" placeholder="" readonly>
+                        </div>
+                    </div>
+                    <hr class="x_hr">
+                    <!-- //수정된 부분 -->
+
+                    <div class="form_area warning_mg">
+                        <h3 class="title">
+                            <label for="num">지역 화폐 번호</label>
+                        </h3>
+                        <div class="box_2_box select">
+                            <input type="text" id="num" title="지역 화폐 번호 첫 4자리 숫자" class="box_4s support" placeholder="" readonly>
+                            <input type="text" title="지역 화폐 번호 두번째 4자리 숫자" class="box_4s support" placeholder="" readonly>
+                            <input type="text" title="지역 화폐 번호 세번째 4자리 숫자" class="box_4s support" placeholder="" readonly>
+                            <input type="text" title="지역 화폐 번호 네번째 4자리 숫자" class="box_4s support" placeholder="" readonly>
+                        </div>
+                    </div>
+                    <!-- //28개 시 부분 끝 -->
+
+                    <!-- 2021.12.수정 -->
+                    <!-- 성남 시흥 김포 부분 시작 -->
+                    <div class="form_area">
+                        <h3 class="title">
+                            <label for="">이름</label>
+                        </h3>
+                        <div>
+                            <input type="text" title="이름" class="" value="홍길동" readonly>
+                        </div>
+                    </div>
+                    <div class="form_area">
+                        <h3 class="title">
+                            <label for="" class="star">거주 지역</label>
+                        </h3>
+                        <div>
+                            <input type="text" title="거주 지역" class="" value="" readonly>
+                        </div>
+                    </div>
+
+                    <!-- 수정된 부분 -->
+                    <hr class="x_hr">
+                    <div class="form_area">
+                        <h3 class="title">
+                            <label for="num">1번 교통 카드 번호</label>
+                        </h3>
+                        <div class="box_2_box select">
+                            <input type="text" id="num" title="1번 교통 카드 번호 첫 4자리 숫자" class="box_4s support" placeholder="" readonly>
+                            <input type="text" title="1번 교통 카드 번호 두번째 4자리 숫자" class="box_4s support" placeholder="" readonly>
+                            <input type="text" title="1번 교통 카드 번호 세번째 4자리 숫자" class="box_4s support" placeholder="" readonly>
+                            <input type="text" title="1번 교통 카드 번호 네번째 4자리 숫자" class="box_4s support" placeholder="" readonly>
+                        </div>
+                    </div>
+                    <div class="form_area">
+                        <h3 class="title">
+                            <label for="num">2번 교통 카드 번호</label>
+                        </h3>
+                        <div class="box_2_box select">
+                            <input type="text" id="num" title="2번 교통 카드 번호 첫 4자리 숫자" class="box_4s support" placeholder="" readonly>
+                            <input type="text" title="2번 교통 카드 번호 두번째 4자리 숫자" class="box_4s support" placeholder="" readonly>
+                            <input type="text" title="2번 교통 카드 번호 세번째 4자리 숫자" class="box_4s support" placeholder="" readonly>
+                            <input type="text" title="2번 교통 카드 번호 네번째 4자리 숫자" class="box_4s support" placeholder="" readonly>
+                        </div>
+                    </div>
+                    <hr class="x_hr">
+                    <!-- //수정된 부분 -->
+                    <!-- 2021.12.수정 -->
+                    <div class="form_area mb2">
+                        <h3 class="title">
+                            <label for="num">지역 화폐 소유자</label>
+                        </h3>
+                        <div class="flex_sb">
+                            <div style="width:48.5%;">
+                                <input type="text" title="이름" readonly>
+                            </div>
+                            <div style="width:48.5%;">
+                                <input type="text" title="휴대폰번호" readonly>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //2021.12.수정 -->
+                    <!-- //성남 시흥 김포 부분 끝 -->
+                    <!-- 2021.12.수정 -->
+                    <button class="lbtn green">메인으로</button>
+                    <!-- //2021.12.수정 -->
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_nav">
+            <span class="box">
+                <a href="#"><span class="">사이트맵</span></a>
+                <a href="#"><span class="">이용약관</span></a>
+            </span>
+            <a href="#"><span class="">개인정보 수집/이용에 관한 약관</span></a>
+            <a href="#"><span class="">개인정보처리 및 위탁에 관한 안내 약관</span></a>
+            <a href="#"><span class="">개인정보처리방침</span></a>
+        </div>
+        <p class="copy">COPYRIGHT 2013 BY GYEONGGI URBAN INNOVATION<br class="mo"> CORPORATION ALL RIGHTS RESERVED</p>
+        <div class="add">
+            <p>경기도 수원시 권선구 권중로 46&lpar;권선동&rpar; 우편번호 16556</p>
+            <p class="call">문의전화 : 경기도 콜센터 031-120</p>
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>경기도 청소년 교통비 지원 포탈</title>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../../assets/css/reset.css"/>
+    <link rel="stylesheet" href="../../assets/css/style.css"/>
+    <link rel="stylesheet" href="../../assets/css/swiper.min.css">
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../../assets/js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="../../assets/js/swiper.min.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</head>
+<body>
+    <header class="main_header">
+        <div class="header_inner clearfix">
+            <h1><a href="#" class="logo">
+                <img src="../../assets/images/logo.svg" alt="로고"></a>
+            </h1>
+            <div class="header_login login">
+                <a href=""><span class="user_name">로그아웃</span></a>
+            </div>
+            <!-- Mobile navigation 시작 -->
+            <div class="ham_nav">
+                <a class="button_container open" id="toggle">
+                        <img src="../../assets/images/open.svg" alt="메뉴열기버튼">
+                </a>
+                <div class="overlay" id="overlay">
+                    <div class="overlay_top">
+                        <h1><a href="#" class="ham_logo">
+                            <img src="../../assets/images/logo.svg" alt="로고"></a>
+                        </h1>
+                        <a class="button_container close" id="toggle">
+                            <img src="../../assets/images/close.svg" alt="메뉴닫기버튼">
+                        </a>
+                    </div>
+                    <div class="overlay_middle flex_sb">
+                        <button>로그인</button>
+                        <button>회원가입</button>
+                    </div>
+                    <div class="container">
+                        <ul class="accordion" id="accordion">
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">서비스 안내</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 1</a></li>
+                                    <li><a href="javascript://">submenu 1</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">게시판</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">교통카드 발급</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">마이페이지</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile navigation 끝 -->
+            <!-- Pc navigation 시작 -->
+            <div class="pc_nav">
+                <nav>
+                    <ul class="clearfix">
+                        <li class="dropdown">
+                            <a href="">서비스 안내</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">게시판</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">교통카드 발급</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">마이페이지</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Pc navigation 끝 -->
+        </div>
+    </header>
+    <section class="mypage_section step">
+        <div class="board_box mypage">
+            <h2>마이페이지</h2>
+            <ul class="step_ck">
+                <li><a href="" >My Home</a></li>
+                <li><a href="">교통카드 등록</a></li>
+                <li class="active"><a href="">지역화폐 등록</a></li>
+                <li><a href="">지원금 신청</a></li>
+                <li><a href="">교통 이용 내역</a></li>
+                <li><a href="">지원금 신청 내역</a></li>
+                <li><a href="">개인정보수정</a></li>
+            </ul>
+        </div>
+        <div class="my_step_box">
+            <div class="list_top pay">
+                <div class="flex_sb pay">
+                    <h3 class="ano_h3 modi">지역화폐 등록</h3>
+                    <div class="btn_area trans2 mt0">
+                        <button type="button" class="btn_2 blue mt0 modi">발급 하러가기</button>
+                        <button type="button" class="btn_2 green mt0 modi" onclick="openLayer('')">지역화폐 등록 / 변경</button>
+                    </div>
+                </div>
+            </div>
+            <div class="list_body_2 area area2">
+                <div class="list_body_2 parents2">
+                    <!-- 등록된 지역화폐가 없을 때 class empty 추가 -->
+                    <div class="list_box no_text_none">
+                        <div class="name" data-before="이름">
+                            <p>홍길동</p>
+                        </div>
+                        <div class="num" data-before="번호">
+                            <p>5215 - 5622 - 5688 - 1522</p>
+                        </div>
+                        <div class="area" data-before="지역">
+                            <p>의정부</p>
+                        </div>
+                        <div class="o_name" data-before="소유자명">
+                            <p>아무개</p>
+                        </div>
+                        <div class="o_sex s1" data-before="소유자성별">
+                            <!-- 여성 s1, 남성 s2 class추가-->
+                            <p class="s1">여성</p>
+                            <p class="s2">남성</p>
+                        </div>
+                        <div class="o_birth" data-before="소유자생년월일">
+                            <p>0000년 00월 00일</p>
+                        </div>
+                        <div class="o_phone" data-before="소유자휴대폰">
+                            <p>010-1234-1234</p>
+                        </div>
+                        <div class="date" data-before="등록일">
+                            <p>2020년 07월 04일</p>
+                        </div>
+                    </div>
+                    <p class="no_text_block" style="margin:2rem 0 2rem">
+                        등록된 지역화폐가 없습니다.<br>
+                        지역화폐를 등록해주세요.
+                    </p>
+                    <div class="bottom_promotion">
+                        <p class="bullet">
+                            반드시 유효한 지역화폐(앱에서 등록된 카드가 보여야 함)를 신청 전에 준비하셔야 합니다.<br>
+                            위에 등록된 정보와 지역화폐사(경기지역화폐)에 가입된 회원정보(이름, 생년월일, 성별, 전화번호)가 일치하지 않으면 지급이 불가합니다.(신청기간 이후 수정 및 변경 불가)
+                        </p>
+                        <p>
+                            주민등록상의 주소지와 동일한 지역의 지역화폐를 통해서만 지원금 지급이 가능합니다.<br>
+                            신청 후, 다른 지역으로 이사 가셔도 신청된 지역화폐 거주지역의 변경이 불가능 하니 주의바랍니다. <br>
+                            신청 후, 지역화폐카드 분실/전화번호 변경 등 실제정보와 불일치할 경우 지급이 불가능 하니 주의바랍니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_nav">
+            <span class="box">
+                <a href="#"><span class="">사이트맵</span></a>
+                <a href="#"><span class="">이용약관</span></a>
+            </span>
+            <a href="#"><span class="">개인정보 수집/이용에 관한 약관</span></a>
+            <a href="#"><span class="">개인정보처리 및 위탁에 관한 안내 약관</span></a>
+            <a href="#"><span class="">개인정보처리방침</span></a>
+        </div>
+        <p class="copy">COPYRIGHT 2013 BY GYEONGGI URBAN INNOVATION<br class="mo"> CORPORATION ALL RIGHTS RESERVED</p>
+        <div class="add">
+            <p>경기도 수원시 권선구 권중로 46&lpar;권선동&rpar; 우편번호 16556</p>
+            <p class="call">문의전화 : 경기도 콜센터 031-120</p>
+        </div>
+    </footer>
+
+
+    <!-- 2020-12 고도화 작업 수정 부분 시작 -->
+
+
+    <!-- 28개시 시작 -->
+
+    <!-- 지역화폐 등록/변경 시작 -->
+    <div id="modalA_youth" class="modal mypage_modal mypage_modal1 pay_up pay_up2" style="display:block;">
+        <!-- Modal 내용 -->
+        <div class="modal-content">
+            <div class="top">
+                <h1 class="modal_title">지역화폐 등록 / 변경</h1>
+                <img src="../../assets/images/close.svg" alt="닫기버튼" class="close" onclick="closeLayer('modalA_youth')">
+            </div>
+            <div class="scroll">
+                <div class="bottom">
+                    <form action="">
+                        <div class="form_area">
+                                    <h3 class="title">
+                                        <label for="" class="star">자녀 선택</label>
+                                    </h3>
+                                    <div>
+                                        <select class="chi_up">
+                                            <option value="">홍일동</option>
+                                            <option value="">option2</option>
+                                            <option value="">option3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                        <div class="form_area">
+                            <div class="input_chk" style="position:relative;">
+                                <input type="radio" id="modalA_youth_chk1" name="modalA_youth_name" class="modalA_youth_chk1" checked/>
+                                <label for="modalA_youth_chk1" class="chk" style="display:inline-block;">
+                                    <span class="chk_btn"></span>
+                                </label>
+                                <span style="position:absolute; top:.5rem; left:2rem; font-size:.8rem; font-weight:bold;">선택한 자녀의 지역화폐 등록</span>
+                            </div>
+                            <div class="input_chk" style="position:relative;">
+                                <input type="radio" id="modalA_youth_chk2" name="modalA_youth_name" class="modalA_youth_chk2"/>
+                                <label for="modalA_youth_chk2" class="chk" style="display:inline-block;">
+                                    <span class="chk_btn"></span>
+                                </label>
+                                <span style="position:absolute; top:0; left:2rem; font-size:.8rem; font-weight:bold;">자녀 본인 명의가 아닌 지역화폐 등록 시(만 13세 또는 휴대폰이 없거나 지역화폐 App을 설치할 수 없는 폰)</span>
+                            </div>
+                        </div>
+                        <!-- 자녀명의 지역화폐 등록 동의시 나오는 부분 시작-->
+                        <div class="modalA_youth_area1">
+                            <div class="form_area warning_mg">
+                                <h3 class="title">
+                                    <label for="name1" class="star">자녀 이름</label>
+                                </h3>
+                                <div>
+                                    <input type="text" id="name1" title="자녀 이름" class="" placeholder="이름을 입력하세요">
+                                </div>
+                                <div class="warning_box">
+                                    <p class="warning"></p>
+                                </div>
+                            </div>
+                            <div class="form_area warning_mg">
+                                <h3 class="title">
+                                    <label for="id_num1" class="star">자녀 주민등록 번호</label>
+                                </h3>
+                                <div class="box_2_box">
+                                    <input type="text" id="id_num1" title="주민등록 번호 앞자리" class="box_2" placeholder="앞자리" maxlength="6">
+                                    <input type="text" title="주민등록 번호 뒷자리" class="box_2 bar" placeholder="뒷자리" maxlength="7">
+                                    <span></span>
+                                </div>
+                                <div class="warning_box">
+                                    <p class="warning"></p>
+                                </div>
+                            </div>
+                            <div class="form_area warning_mg">
+                                <h3 class="title">
+                                    <label for="tel1" class="star">자녀 휴대폰 번호</label>
+                                </h3>
+                                <div class="check_phone warning">
+                                    <div>
+                                        <input type="text" id="tel1" title="자녀 휴대폰 번호" class="" placeholder="휴대폰 번호를 입력하세요." maxlength="11">
+                                        <button type="button" class="green">인증번호 발송</button>
+                                    </div>
+                                    <div>
+                                        <input type="text" title="인증 번호" class="" placeholder="인증번호 6자리 숫자." maxlength="6">
+                                        <span>03:00</span>
+                                        <button type="button" class="grey">인증 확인</button>
+                                        <!-- 인증완료되면 <button> class="grey" -> class="green"으로 변경  -->
+                                    </div>
+                                </div>
+                                <div class="warning_box">
+                                    <p class="area_info">인증완료</p>
+                                    <!-- 완료메세지 있을 시 p태그 안에 삽입 -->
+                                </div>
+                            </div>
+                            <div class="form_area warning_mg">
+                                <h3 class="title">
+                                    <label for="num1" class="star">자녀 지역화폐 번호</label>
+                                </h3>
+                                <div class="box_2_box select">
+                                    <input type="number" id="num1" title="자녀 지역 화폐 번호" class="box_4s">
+                                    <input type="number" title="본인 지역 화폐 번호" class="box_4s ">
+                                    <input type="number" title="본인 지역 화폐 번호" class="box_4s ">
+                                    <input type="number" title="본인 지역 화폐 번호" class="box_4s ">
+                                </div>
+                                <div class="warning_box">
+                                    <p class="warning"></p>
+                                </div>
+                            </div>
+                            <div class="form_area">
+                                <h3 class="title">
+                                    <label class="star">거주 지역</label>
+                                </h3>
+                                <div>
+                                    <input type="text" title="거주지역" class="" value="의정부" readonly>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //자녀명의 지역화폐 등록 동의시 나오는 부분 끝-->
+                        <!-- 자녀 명의 외 지역화폐 등록 동의시 나오는 부분 시작-->
+                        <div class="modalA_youth_area2">
+                            <div class="form_area warning_mg">
+                                <h3 class="title">
+                                    <label for="name2" class="star">대리인 이름</label>
+                                </h3>
+                                <div>
+                                    <input type="text" id="name2" title="대리인 이름" class="" placeholder="대리인 이름을 입력하세요">
+                                </div>
+                                <div class="warning_box">
+                                    <p class="warning"></p>
+                                </div>
+                            </div>
+                            <div class="form_area warning_mg">
+                                <h3 class="title">
+                                    <label for="id_num2" class="star">대리인 주민등록 번호</label>
+                                </h3>
+                                <div class="box_2_box">
+                                    <input type="text" id="id_num2" title="주민등록 번호 앞자리" class="box_2" placeholder="앞자리" maxlength="6">
+                                    <input type="text" title="주민등록 번호 뒷자리" class="box_2 bar" placeholder="뒷자리" maxlength="7">
+                                    <span></span>
+                                </div>
+                                <div class="warning_box">
+                                    <p class="warning"></p>
+                                </div>
+                            </div>
+                            <div class="form_area warning_mg">
+                                <h3 class="title">
+                                    <label for="tel2" class="star">대리인 휴대폰 번호</label>
+                                </h3>
+                                <div class="check_phone warning">
+                                    <div>
+                                        <input type="text" id="tel2" title="대리인 휴대폰 번호" class="" placeholder="휴대폰 번호를 입력하세요." maxlength="11">
+                                        <button type="button" class="green">인증번호 발송</button>
+                                    </div>
+                                    <div>
+                                        <input type="text" title="인증 번호" class="" placeholder="인증번호 6자리 숫자." maxlength="6">
+                                        <span>03:00</span>
+                                        <button type="button" class="grey">인증 확인</button>
+                                        <!-- 인증완료되면 <button> class="grey" -> class="green"으로 변경  -->
+                                    </div>
+                                </div>
+                                <div class="warning_box">
+                                    <p class="area_info">인증완료</p>
+                                    <!-- 완료메세지 있을 시 p태그 안에 삽입 -->
+                                </div>
+                            </div>
+                            <div class="form_area warning_mg">
+                                <h3 class="title">
+                                    <label for="num2" class="star">대리인 지역화폐 번호</label>
+                                </h3>
+                                <div class="box_2_box select">
+                                    <input type="number" id="num2" title="대리인 지역 화폐 번호" class="box_4s">
+                                    <input type="number" title="본인 지역 화폐 번호" class="box_4s ">
+                                    <input type="number" title="본인 지역 화폐 번호" class="box_4s ">
+                                    <input type="number" title="본인 지역 화폐 번호" class="box_4s ">
+                                </div>
+                                <div class="warning_box">
+                                    <p class="warning"></p>
+                                </div>
+                            </div>
+                            <div class="form_area">
+                                <h3 class="title">
+                                    <label class="star">거주 지역</label>
+                                </h3>
+                                <div>
+                                    <input type="text" title="거주지역" class="" value="의정부" readonly>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //자녀 명의 외  지역화폐 등록 동의시 나오는 부분 끝-->
+                        <div class="modal_btn">
+                            <button class="madal_btn modal_btn2 blue">등록</button>
+                            <button type="button" class="madal_btn modal_btn2 green" onclick="closeLayer('modalA_youth')">취소</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //지역화폐 등록/변경 끝 -->
+
+    <!-- //28개시 끝 -->
+
+
+    <!-- 성남/시흥 시작 -->
+
+    <!-- 공통안내 시작 -->
+    <div id="modal" class="modal mypage_modal mypage_modal1">
+        <!-- Modal 내용 -->
+        <div class="modal-content">
+            <!-- 스크롤이 필요할 경우 클래스 modal-content-scroll 추가 -->
+            <div class="modal_top_outer">
+                <div class="modal_top clearfix">
+                    <h1 class="modal_title pay">성남시, 시흥시 지역화폐 안내</h1>
+                    <img src="../../assets/images/close.svg" alt="닫기버튼" class="close" onclick="closeLayer('modal')">
+                </div>
+            </div>
+            <div class="scroll">
+                <div class="bottom">
+                    <p class="pd0 pt1">
+                        'Chak'앱을 설치하신 후 성남시 또는 시흥시의 지역화폐를 발행 하셨습니까?
+                    </p>
+                    <strong style="font-size:1rem;">
+                        앱 실행 후 꼭 해당 지역의 지역화폐를 발행하셔야 합니다.
+                    </strong>
+                    <p class="pd0 pt2">
+                        지금 등록하시려는 정보(휴대폰번호 등)와 성남시 또는 시흥시 지역화폐에 등록된 정보가 다를 경우 지원금 지급이 지연되거나 지급되지 않을 수 있으니 다시 한번 확인해 주십시오.
+                    </p>
+                    <strong style="color:#10a487; font-size:.9rem;">
+                        반드시 유효한 지역화폐(앱에서 지역화폐가 발행된 상태)를 준비하셔야 합니다.
+                    </strong>
+                    <p class="pd0 pt2">
+                        ※ 주민등록상의 주소지와 동일한 지역의 지역화폐를 통해서만 지원금 지급이 가능합니다.<br>
+                        ※ 신청 후, 다른 지역으로 이사 가져도 신청된 지역화폐 거주지역의 변경이 불가능 하니 주의바랍니다.<br>
+                        ※ 신청 후, 지역화폐 카드에 가입한 정보와 등록 시 입력한 정보가 불일치할 경우 지급이 불가능 하니 주의 바랍니다.
+                    </p>
+                    <div class="btn_area pay mt2">
+                        <button class="green" onclick="closeLayer('modal')">확인</button>
+                        <button class="blue">지역화폐 정보입력</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //공통안내 끝 -->
+    <!-- 지역화폐 등록/변경 시작 -->
+    <div id="modalB_youth" class="modal mypage_modal mypage_modal1 pay_up pay_up2">
+        <!-- Modal 내용 -->
+        <div class="modal-content">
+            <div class="top">
+                <h1 class="modal_title">지역화폐 등록 / 변경</h1>
+                <img src="../../assets/images/close.svg" alt="닫기버튼" class="close" onclick="closeLayer('modalA_youth')">
+            </div>
+            <div class="scroll">
+                <div class="bottom">
+                    <form action="">
+                        <div class="form_area">
+                            <h3 class="title">
+                                <label for="" class="star">자녀 선택</label>
+                            </h3>
+                            <div>
+                                <select class="chi_up">
+                                    <option value="">홍일동</option>
+                                    <option value="">option2</option>
+                                    <option value="">option3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form_area">
+                            <div class="input_chk">
+                                <input type="radio" id="modalB_youth_chk1" name="modalB_youth_name" class="modalB_youth_chk1" checked/>
+                                <label for="modalB_youth_chk1" class="chk">
+                                    <span class="chk_btn"></span>자녀 본인 정보
+                                </label>
+                            </div>
+                            <div class="input_chk">
+                                <input type="radio" id="modalB_youth_chk2" name="modalB_youth_name" class="modalB_youth_chk2"/>
+                                <label for="modalB_youth_chk2" class="chk chk_par">
+                                    <span class="chk_btn"></span>
+                                    <div class="chk_text">자녀 본인 명의가 아닌 지역화폐 등록 시(만 13세 또는 휴대폰이 없거나 지역화폐 App을 설치할 수 없는 폰)</div>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- 자녀명의 지역화폐 등록 동의시 나오는 부분 시작-->
+                        <div class="modalB_youth_area1">
+                            <div class="form_area">
+                                <h3 class="title">
+                                    <label class="star">거주 지역</label>
+                                </h3>
+                                <div>
+                                    <input type="text" title="거주지역" class="" value="성남" readonly>
+                                </div>
+                            </div>
+                            <div class="form_area warning_mg">
+                                <div class="form_area warning_mg">
+                                    <button type="button" class="lbtn green join_lbtn">지역화폐 가입 조회(자녀)</button>
+                                </div>
+                                <div class="warning_box">
+                                    <p class="area_info">가입 확인 : 가입된 지역화폐가 있습니다.</p>
+                                    <!-- <p class="warning">가입 확인 : 가입된 지역화폐가 없습니다.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //자녀명의 지역화폐 등록 동의시 나오는 부분 끝-->
+                        <!-- 자녀 명의 외 지역화폐 등록 동의시 나오는 부분 시작-->
+                        <div class="modalB_youth_area2">
+                            <div class="form_area warning_mg">
+                                <h3 class="title">
+                                    <label for="name3" class="star">대리인 이름</label>
+                                </h3>
+                                <div>
+                                    <input type="text" id="name3" title="대리인 이름" class="" placeholder="대리인 이름을 입력하세요">
+                                </div>
+                                <div class="warning_box">
+                                    <p class="warning"></p>
+                                </div>
+                            </div>
+                            <div class="form_area warning_mg">
+                                <h3 class="title">
+                                    <label for="id_num3" class="star">대리인 주민등록 번호</label>
+                                </h3>
+                                <div class="box_2_box">
+                                    <input type="text" id="id_num3" title="주민등록 번호 앞자리" class="box_2" placeholder="앞자리" maxlength="6">
+                                    <input type="text" title="주민등록 번호 뒷자리" class="box_2 bar" placeholder="뒷자리" maxlength="7">
+                                    <span></span>
+                                </div>
+                                <div class="warning_box">
+                                    <p class="warning"></p>
+                                </div>
+                            </div>
+                            <div class="form_area warning_mg">
+                                <h3 class="title">
+                                    <label for="tel3" class="star">대리인 휴대폰 번호</label>
+                                </h3>
+                                <div class="check_phone warning">
+                                    <div>
+                                        <input type="text" id="tel3" title="대리인 휴대폰 번호" class="" placeholder="휴대폰 번호를 입력하세요." maxlength="11">
+                                        <button type="button" class="green">인증번호 발송</button>
+                                    </div>
+
+                                    <div>
+                                        <input type="text" title="인증 번호" class="" placeholder="인증번호 6자리 숫자." maxlength="6">
+                                        <span>03:00</span>
+                                        <button type="button" class="grey">인증 확인</button>
+                                        <!-- 인증완료되면 <button> class="grey" -> class="green"으로 변경  -->
+                                    </div>
+                                </div>
+                                <div class="warning_box">
+                                    <p class="area_info">인증완료</p>
+                                    <!-- 완료메세지 있을 시 p태그 안에 삽입 -->
+                                </div>
+                            </div>
+                            <div class="form_area input_chk">
+                                <input type="checkbox" id="app_chk" name="" class=""/>
+                                <label for="app_chk" class="chk">
+                                    <span class="chk_btn"></span>App설치 불가 폰
+                                </label>
+                            </div>
+                            <div class="form_area">
+                                <h3 class="title">
+                                    <label class="star">거주 지역</label>
+                                </h3>
+                                <div>
+                                    <input type="text" title="거주지역" class="" value="성남" readonly>
+                                </div>
+                            </div>
+                            <div class="form_area warning_mg">
+                                <div class="form_area warning_mg">
+                                    <button type="button" class="lbtn green join_lbtn">지역화폐 가입 조회(대리인)</button>
+                                </div>
+                                <div class="warning_box">
+                                    <p class="area_info">가입 확인 : 가입된 지역화폐가 있습니다.</p>
+                                    <!-- <p class="warning">가입 확인 : 가입된 지역화폐가 없습니다.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //자녀 명의 외 지역화폐 등록 동의시 나오는 부분 끝-->
+                        <div class="modal_btn">
+                            <button class="madal_btn modal_btn2 blue">등록</button>
+                            <button type="button" class="madal_btn modal_btn2 green" onclick="closeLayer('modalA_youth')">취소</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //지역화폐 등록/변경 끝 -->
+
+    <!-- //성남/시흥 끝 -->
+
+
+    <!-- 김포 시작 -->
+
+    <!-- 공통안내 시작 -->
+    <div id="modal1" class="modal mypage_modal mypage_modal1">
+        <!-- Modal 내용 -->
+        <div class="modal-content">
+            <!-- 스크롤이 필요할 경우 클래스 modal-content-scroll 추가 -->
+            <div class="modal_top_outer">
+                <div class="modal_top clearfix">
+                    <h1 class="modal_title pay">김포시 지역화폐 안내</h1>
+                    <img src="../../assets/images/close.svg" alt="닫기버튼" class="close" onclick="closeLayer('modal1')">
+                </div>
+            </div>
+            <div class="scroll">
+                <div class="bottom">
+                    <p class="pd0 pt1">
+                        '착한페이'앱을 설치하신 후 성남시 또는 시흥시의 지역화폐를 발행 하셨습니까?
+                    </p>
+                    <strong style="font-size:1rem;">
+                        앱 실행 후 꼭 김포시 지역화폐를 발행하셔야 합니다.
+                    </strong>
+                    <p class="pd0 pt2">
+                        지금 등록하시려는 정보(휴대폰번호 등)와 김포시 지역화폐에 등록된 정보가 다를 경우 지원금 지급이 지연되거나 지급되지 않을 수 있으니 다시 한번 확인해 주십시오.
+                    </p>
+                    <strong style="color:#10a487; font-size:.9rem;">
+                        반드시 유효한 지역화폐(앱에서 등록된 카드가 보여야함)를 준비하셔야 합니다.
+                    </strong>
+                    <p class="pd0 pt2">
+                        ※ 주민등록상의 주소지와 동일한 지역의 지역화폐를 통해서만 지원금 지급이 가능합니다.<br>
+                        ※ 신청 후, 다른 지역으로 이사 가져도 신청된 지역화폐 거주지역의 변경이 불가능 하니 주의바랍니다.<br>
+                        ※ 신청 후, 지역화폐 카드에 가입한 정보와 등록 시 입력한 정보가 불일치할 경우 지급이 불가능 하니 주의 바랍니다.
+                    </p>
+                    <div class="btn_area pay mt2">
+                        <button class="green" onclick="closeLayer('modal1')">확인</button>
+                        <button class="blue">지역화폐 정보입력</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //공통안내 끝 -->
+    <!-- 지역화폐 등록/변경 시작 -->
+    <div id="modalC_youth" class="modal mypage_modal mypage_modal1 pay_up pay_up2">
+        <!-- Modal 내용 -->
+        <div class="modal-content">
+            <div class="top">
+                <h1 class="modal_title">지역화폐 등록 / 변경</h1>
+                <img src="../../assets/images/close.svg" alt="닫기버튼" class="close" onclick="closeLayer('modalC_youth')">
+            </div>
+            <div class="scroll">
+                <div class="bottom">
+                    <form action="">
+                        <div class="form_area">
+                            <h3 class="title">
+                                <label for="" class="star">자녀 선택</label>
+                            </h3>
+                            <div>
+                                <select class="chi_up">
+                                    <option value="">홍일동</option>
+                                    <option value="">option2</option>
+                                    <option value="">option3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form_area">
+                            <div class="input_chk">
+                                <input type="radio" id="modalC_youth_chk1" name="modalB_youth_name" class="modalC_youth_chk1" checked/>
+                                <label for="modalC_youth_chk1" class="chk">
+                                    <span class="chk_btn"></span>자녀 본인 정보
+                                </label>
+                            </div>
+                            <div class="input_chk">
+                                <input type="radio" id="modalC_youth_chk2" name="modalB_youth_name" class="modalC_youth_chk2"/>
+                                <label for="modalC_youth_chk2" class="chk chk_par">
+                                    <span class="chk_btn"></span>
+                                    <div class="chk_text">자녀 본인 명의가 아닌 지역화폐 등록 시(만 13세 또는 휴대폰이 없거나 지역화폐 App을 설치할 수 없는 폰)</div>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- 자녀명의 지역화폐 등록 동의시 나오는 부분 시작-->
+                        <div class="modalC_youth_area1">
+                            <div class="form_area">
+                                <h3 class="title">
+                                    <label class="star">거주 지역</label>
+                                </h3>
+                                <div>
+                                    <input type="text" title="거주지역" class="" value="김포" readonly>
+                                </div>
+                            </div>
+                            <div class="form_area">
+                                <h3 class="title">
+                                    <label class="star">폴더폰 여부</label>
+                                </h3>
+                                <div class="flex_s">
+                                    <div class="input_chk" style="margin-right:10%; margin-bottom:0;">
+                                        <input type="radio" id="folder1" name="folder"/>
+                                        <label for="folder1" class="chk">
+                                            <span class="chk_btn"></span>예
+                                        </label>
+                                    </div>
+                                    <div class="input_chk" style="margin-bottom:0;">
+                                        <input type="radio" id="folder2" name="folder"/>
+                                        <label for="folder2" class="chk">
+                                            <span class="chk_btn"></span>아니오
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_area warning_mg">
+                                <h3 class="title">
+                                    <label for="tel4" class="star">자녀 휴대폰 번호</label>
+                                </h3>
+                                <div class="check_phone warning">
+                                    <div>
+                                        <input type="text" id="tel4" title="자녀 휴대폰 번호" class="" placeholder="휴대폰 번호를 입력하세요." maxlength="11">
+                                        <button type="button" class="green">인증번호 발송</button>
+                                    </div>
+                                    <!-- <p class="warning">* 김포시 지역화폐 모바일 앱(착한페이)에 가입한 휴대폰 번호를 입력해주세요.</p> -->
+                                    <div>
+                                        <input type="text" title="인증 번호" class="" placeholder="인증번호 6자리 숫자." maxlength="6">
+                                        <span>03:00</span>
+                                        <button type="button" class="grey">인증 확인</button>
+                                        <!-- 인증완료되면 <button> class="grey" -> class="green"으로 변경  -->
+                                    </div>
+                                </div>
+                                <div class="warning_box">
+                                    <p class="area_info">인증완료</p>
+                                    <!-- 완료메세지 있을 시 p태그 안에 삽입 -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //자녀명의 지역화폐 등록 동의시 나오는 부분 끝-->
+                        <!-- 자녀 명의 외 지역화폐 등록 동의시 나오는 부분 시작-->
+                        <div class="modalC_youth_area2">
+                            <div class="form_area">
+                                <h3 class="title">
+                                    <label class="star">거주 지역</label>
+                                </h3>
+                                <div>
+                                    <input type="text" title="거주지역" class="" value="김포" readonly>
+                                </div>
+                            </div>
+                            <div class="form_area warning_mg">
+                                <h3 class="title">
+                                    <label for="name5" class="star">대리인 이름</label>
+                                </h3>
+                                <div>
+                                    <input type="text" id="name5" title="대리인 이름" class="" placeholder="대리인 이름을 입력하세요">
+                                </div>
+                                <div class="warning_box">
+                                    <p class="warning"></p>
+                                </div>
+                            </div>
+                            <div class="form_area warning_mg">
+                                <h3 class="title">
+                                    <label for="id_num5" class="star">대리인 주민등록 번호</label>
+                                </h3>
+                                <div class="box_2_box">
+                                    <input type="text" id="id_num5" title="주민등록 번호 앞자리" class="box_2" placeholder="앞자리" maxlength="6">
+                                    <input type="text" title="주민등록 번호 뒷자리" class="box_2 bar" placeholder="뒷자리" maxlength="7">
+                                    <span></span>
+                                </div>
+                                <div class="warning_box">
+                                    <p class="warning"></p>
+                                </div>
+                            </div>
+                            <div class="form_area">
+                                <h3 class="title">
+                                    <label class="star">폴더폰 여부</label>
+                                </h3>
+                                <div class="flex_s">
+                                    <div class="input_chk" style="margin-right:10%; margin-bottom:0;">
+                                        <input type="radio" id="folder3" name="folder" />
+                                        <label for="folder3" class="chk">
+                                            <span class="chk_btn"></span>예
+                                        </label>
+                                    </div>
+                                    <div class="input_chk" style="margin-bottom:0;">
+                                        <input type="radio" id="folder4" name="folder" />
+                                        <label for="folder4" class="chk">
+                                            <span class="chk_btn"></span>아니오
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_area warning_mg">
+                                <h3 class="title">
+                                    <label for="tel5" class="star">대리인 휴대폰 번호</label>
+                                </h3>
+                                <div class="check_phone warning">
+                                    <div>
+                                        <input type="text" id="tel5" title="대리인 휴대폰 번호" class="" placeholder="휴대폰 번호를 입력하세요." maxlength="11">
+                                        <button type="button" class="green">인증번호 발송</button>
+                                    </div>
+                                    <!-- <p class="warning">* 김포시 지역화폐 모바일 앱(착한페이)에 가입한 휴대폰 번호를 입력해주세요.</p> -->
+                                    <div>
+                                        <input type="text" title="인증 번호" class="" placeholder="인증번호 6자리 숫자." maxlength="6">
+                                        <span>03:00</span>
+                                        <button type="button" class="grey">인증 확인</button>
+                                        <!-- 인증완료되면 <button> class="grey" -> class="green"으로 변경  -->
+                                    </div>
+                                </div>
+                                <div class="warning_box">
+                                    <p class="area_info">인증완료</p>
+                                    <!-- 완료메세지 있을 시 p태그 안에 삽입 -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //자녀 명의 외 지역화폐 등록 동의시 나오는 부분 끝-->
+                        <div class="modal_btn">
+                            <button class="madal_btn modal_btn2 blue">등록</button>
+                            <button type="button" class="madal_btn modal_btn2 green" onclick="closeLayer('modalA_youth')">취소</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //지역화폐 등록/변경 끝 -->
+
+    <!-- //김포 끝 -->
+
+
+    <!-- //2020-12 고도화 작업 수정 부분 끝 -->
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>경기도 청소년 교통비 지원 관리자 시스템</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../../assets/css/reset.css"/>
+    <link rel="stylesheet" href="../../assets/css/style.css"/>
+    <!-- js -->
+    <script src="../../assets/js/jquery-3.5.1.min.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</head>
+<body>
+    <input type="text">
+    <button type="button" onclick="openLayer('modal')">클릭</button>
+    <div id="modal" class="modal mypage_modal mypage_modal1"                >
+        <!-- Modal 내용 -->
+        <div class="modal-content">
+            <!-- 스크롤이 필요할 경우 클래스 modal-content-scroll 추가 -->
+            <div class="modal_top_outer">
+                <div class="modal_top clearfix">
+                    <h1 class="modal_title pay">2020년 상반기 비회원 신청자 안내</h1>
+                    <a href="" class="close_btnB"></a>
+                </div>
+            </div>
+            <div class="scroll">
+                <div class="bottom">
+                    <strong style="font-size:1.2rem;">2020년 상반기 비회원 신청자 안내</strong>
+                    <p>
+                    이번 <span class="en">2021</span>년 1월 4일 부터는 회원 가입 시 [ 교통카드 등록 ] , [ 지역화폐 등록 ]이
+                    제외되어 기존의 ‘비회원’이었던 회원 구분이 삭제됩니다.<br>
+                    <span class="en">2020</span>년 7월에 ‘비회원’으로 지원금을 신청하신 분께서는 [ 회원 가입 ]을
+                    하신 후 지원금을 신청해 주세요.
+                    </p>
+                    <strong style="color:#10a487; font-size:.8rem;">
+                        ※ 이미 회원가입을 진행하신 후 교통카드 (분실/만료, 17자리 이상 특수번호) 등록을 위해 ‘비회원’으로 신청하신 분은 제외
+                    </strong>
+                    <div class="btn_area pay mt2">
+                        <button class="green" onclick="closeLayer('modal')">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

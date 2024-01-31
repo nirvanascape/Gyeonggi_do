@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>경기도 청소년 교통비 지원 포탈</title>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/css/reset.css"/>
+    <link rel="stylesheet" href="../assets/css/style.css"/>
+    <link rel="stylesheet" href="../assets/css/swiper.min.css">
+    <!-- js -->
+    <script src="../assets/js/jquery-3.5.1.min.js"></script>
+    <script src="../assets/js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="../assets/js/swiper.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</head>
+<body>
+    <header class="main_header">
+        <div class="header_inner clearfix">
+            <h1><a href="#" class="logo">
+                <img src="../assets/images/logo.svg" alt="로고"></a>
+            </h1>
+
+
+
+
+
+
+            <!-- 수정된부분!!!!(삭제) 시작 -->
+            <!-- <div class="login">
+                <a href=""><span class="user_name">로그아웃</span></a>
+            </div> -->
+            <!-- //수정된부분!!!!(삭제) 끝-->
+
+
+
+
+
+
+
+            <!-- Mobile navigation 시작 -->
+            <div class="ham_nav">
+                <a class="button_container open" id="toggle">
+                        <img src="../assets/images/open.svg" alt="메뉴열기버튼">
+                </a>
+                <div class="overlay" id="overlay">
+                    <div class="overlay_top">
+                        <h1><a href="#" class="ham_logo">
+                            <img src="../assets/images/logo.svg" alt="로고"></a>
+                        </h1>
+                        <a class="button_container close" id="toggle">
+                            <img src="../assets/images/close.svg" alt="메뉴닫기버튼">
+                        </a>
+                    </div>
+                    <div class="overlay_middle flex_sb">
+                        <button>로그인</button>
+                        <button>회원가입</button>
+                    </div>
+                    <div class="container">
+                        <ul class="accordion" id="accordion">
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">서비스 안내</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 1</a></li>
+                                    <li><a href="javascript://">submenu 1</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">게시판</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                    <li><a href="javascript://">submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">교통카드 발급</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion__list">
+                                <div class="link"><span class="link__title">마이페이지</span>
+                                    <div class="down_icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                    <li><a href="javascript://">submenu 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile navigation 끝 -->
+            <!-- Pc navigation 시작 -->
+            <div class="pc_nav">
+                <nav>
+                    <ul class="clearfix">
+                        <li class="dropdown">
+                            <a href="">서비스 안내</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">게시판</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">교통카드 발급</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">마이페이지</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+
+
+
+
+
+
+
+                        <!-- 수정된부분!!!!(추가) 시작 -->
+                        <li class="dropdown">
+                            <a href="">메뉴</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                                <li><a href="">sub menu</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <div class="div login">
+                                <a href="">로그아웃</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Pc navigation 끝 -->
+        </div>
+    </header>
+    <section class="main_section">
+        <!-- Main Visual 시작 -->
+        <div class="traffic_card_visual">
+            <div class="visual_bg">
+                <div>
+                    <p class="text1">교통카드를<br><span>발급</span>해 드립니다.</p>
+                    <!-- <p class="text2">약 1주 &sim; 2주의 배송기간이 소요됩니다.</p> -->
+
+
+                    <div class="btn">
+                        <span class="card_noti">
+                            <button>체크카드 신청</button>
+                            <span>만 18세 이상만 가능</span>
+                        </span>
+                        <span class="card_noti">
+                            <button>청소년증 발급 안내</button>
+                            <span>만 18세 이하만 가능</span>
+                        </span>
+                    </div>
+
+                    
+                    <div class="card_img">
+                        <img src="../assets/images/card_both.png" alt="">
+                    </div>
+                    <p class="text3">만 18세 미만 청소년의 체크카드 발급은<br class="pc_768">롯데카드 영업점에서 법정대리인(부모 등) 동의서를 제출해야 신청 가능합니다. &nbsp;&nbsp;<a href="https://www.lottecard.co.kr/app/LPCOIAH_P100.lc" target="_blank" style="color: #3B3B8A">(자세히보기)</a></p>
+                    <!-- 고도화 2020/12 color변경-->
+                    <div class="dark"></div>
+                </div>
+            </div>
+        </div>
+        <!-- //Main Visual 끝 -->
+    </section>
+    <footer>
+        <div class="footer_nav">
+            <span class="box">
+                <a href="#"><span class="">사이트맵</span></a>
+                <a href="#"><span class="">이용약관</span></a>
+            </span>
+            <a href="#"><span class="">개인정보 수집/이용에 관한 약관</span></a>
+            <a href="#"><span class="">개인정보처리 및 위탁에 관한 안내 약관</span></a>
+            <a href="#"><span class="">개인정보처리방침</span></a>
+        </div>
+        <p class="copy">COPYRIGHT 2013 BY GYEONGGI URBAN INNOVATION<br class="mo"> CORPORATION ALL RIGHTS RESERVED</p>
+        <div class="add">
+            <p>경기도 수원시 권선구 권중로 46&lpar;권선동&rpar; 우편번호 16556</p>
+            <p class="call">문의전화 : 경기도 콜센터 031-120</p>
+        </p>
+    </footer>
+    <!-- 청소년증 발급 안내 팝업 -->
+    <div id="modal" class="modal mypage_modal mypage_modal1 traffic_card_popup">
+        <!-- Modal 내용 -->
+        <div class="modal-content service_notice">
+            <!-- 스크롤이 필요할 경우 클래스 modal-content-scroll 추가 -->
+            <div class="modal_top_outer">
+                <div class="modal_top clearfix">
+                    <h1 class="modal_title pay">청소년증 발급 안내</h1>
+                    <img src="../assets/images/close.svg" alt="닫기버튼" class="close" onclick="closeLayer('modal')">
+                </div>
+            </div>
+            <div class="scroll">
+                <div class="board">
+                    <p class="service_popup_text1">
+                        청소년증은<br>청소년이라면 누구나<br>무료로 발급 가능합니다.
+                    </p>
+                    <p class="service_popup_text2">
+                        만 9세 이상 18세 이하 청소년 본인 또는 대리인이 가까운 행정복지센터(주민센터)에서 신청할 수 있습니다.<br>
+                        성인에게는 주민등록증, 청소년에게는 청소년증<br><br>
+                        청소년증은 공적신분증으로 각종 시험과 은행거래 등에서 신분증으로 활용 가능합니다. 교통카드로도 사용 가능합니다.
+                    </p>
+                    <p class="service_popup_text3">
+                        &#8251; 청소년증 발급 시 교통카드 기능을 선택해주세요.(교통카드 명 : 캐시비)
+                    </p>
+                    <div class="text_area">
+                        <div class="title_box">
+                            <h2 class="">지원기능</h2>
+                        </div>
+                        <div class="box">
+                            <p>① 공적신분증 : 대학수학능력시험, 검정고시, 외국어능력시험 등 각종 시험과 금융기관에서 신분증으로 사용</p>
+                            <p>② 청소년우대 증표 : 수송시설, 문화시설, 여가시설에서 청소년 우대요금 적용</p>
+                            <p>③ 선불형 교통카드 : 대중교통 및 편의점 등 해당 교통카드사의 가맹점에서 결제</p>
+                        </div>
+                    </div>
+                    <div class="text_area">
+                        <div class="title_box">
+                            <h2 class="">발급 절차 안내</h2>
+                        </div>
+                        <div class="box">
+                            <p>① 가까운 행정복지센터 (주민센터) 방문<br>
+                            - 주소지 관계없이 가까운 주민센터에 방문하여 접수, 발급비용 무료<br>
+                            ※ 신청인 : 청소년 또는 법정 대리인
+                            </p>
+                            <p>② 발급 시 준비물 : 발급신청서 (관할 행정복지센터 비치), 사진1매 (3cm x 4cm), 대리인 신청서 (대리인임을 증명할 수 있는 서류, 신분증)
+                            </p>
+                            <p>
+                            ③ 직접 발급기관 방문하여 수령, 등기 수령 (등기 수령 시 등기비용 별도 지불)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
