@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="92" height="72" viewBox="0 0 92 72">
+    <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+        <rect width="90" height="70" fill="#F5F6FB" stroke="#D8DCE3" rx="8"/>
+        <g>
+            <path fill="#6BBB5C" d="M39 15.5C39 24.06 32.061 31 23.5 31S8 24.06 8 15.5C8 6.938 14.939 0 23.5 0S39 6.939 39 15.5" transform="translate(23 12)"/>
+            <path stroke="#131313" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M39 15.5C39 24.06 32.061 31 23.5 31S8 24.06 8 15.5C8 6.938 14.939 0 23.5 0S39 6.939 39 15.5z" transform="translate(23 12)"/>
+            <g>
+                <path fill="#FFF" d="M29.647 6.941l5.834-5.354c.925-.848 2.358-.874 3.313-.058 1.014.865 1.128 2.363.255 3.364L33.16 11.65l-10.974 5.674H6.785L.279 9.13" transform="translate(23 12) translate(6 25)"/>
+                <path stroke="#131313" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M29.647 6.941l5.834-5.354c.925-.848 2.358-.874 3.313-.058 1.014.865 1.128 2.363.255 3.364L33.16 11.65l-10.974 5.674H6.785L.279 9.13" transform="translate(23 12) translate(6 25)"/>
+            </g>
+            <g>
+                <path fill="#FFF" d="M.512 8.458l8.589-6.446C10.513.951 12.246.377 14.03.377h5.567l3.915 2.852h8.074c1.486 0 2.691 1.17 2.691 2.615 0 1.443-1.205 2.614-2.69 2.614h-12.48" transform="translate(23 12) translate(3 27)"/>
+                <path stroke="#131313" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M.512 8.458l8.589-6.446C10.513.951 12.246.377 14.03.377h5.567l3.915 2.852h8.074c1.486 0 2.691 1.17 2.691 2.615 0 1.443-1.205 2.614-2.69 2.614h-12.48" transform="translate(23 12) translate(3 27)"/>
+            </g>
+            <path fill="#FF9EA5" d="M14 44.298L9.318 48 0 35.702 4.682 32z" transform="translate(23 12)"/>
+            <path stroke="#131313" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 44.298L9.318 48 0 35.702 4.682 32zM28 10L25.75 21 23.5 10 21.25 21 19 10M17 12.5L30 12.5" transform="translate(23 12)"/>
+        </g>
+    </g>
+</svg>

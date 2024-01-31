@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="92" height="72" viewBox="0 0 92 72">
+    <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+        <rect width="90" height="70" fill="#F5F6FB" stroke="#D8DCE3" rx="8"/>
+        <g>
+            <path fill="#FFF" d="M0 9.625L17.585 47.082 38.085 37.458 20.499 0z" transform="translate(18 10)"/>
+            <path stroke="#131313" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M38.085 37.457L17.584 47.081 0 9.624 20.499 0z" transform="translate(18 10)"/>
+            <path fill="#FFF" d="M39.914 41.942L17.858 47.082 8.468 6.782 30.523 1.643z" transform="translate(18 10)"/>
+            <path stroke="#131313" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M39.914 41.942L17.858 47.082 8.468 6.782 30.523 1.643z" transform="translate(18 10)"/>
+            <path fill="#6BBB5C" d="M17.614 47.271L41.984 47.271 41.984 5.891 17.614 5.891z" transform="translate(18 10)"/>
+            <path stroke="#131313" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.614 47.271L41.984 47.271 41.984 5.891 17.614 5.891z" transform="translate(18 10)"/>
+            <g>
+                <path fill="#FFF" d="M14.823.837H2.981c0 1.36-1.1 2.461-2.46 2.461v29.23c1.36 0 2.46 1.101 2.46 2.46h11.842c0-1.359 1.102-2.46 2.461-2.46V3.297c-1.359 0-2.46-1.102-2.46-2.46" transform="translate(18 10) translate(21 8.668)"/>
+                <path stroke="#131313" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.823.837H2.981c0 1.36-1.1 2.461-2.46 2.461v29.23c1.36 0 2.46 1.101 2.46 2.46h11.842c0-1.359 1.102-2.46 2.461-2.46V3.297c-1.359 0-2.46-1.102-2.46-2.46z" transform="translate(18 10) translate(21 8.668)"/>
+                <path fill="#BAF2ED" d="M13.233 17.913c0 2.392-1.939 4.331-4.332 4.331-2.392 0-4.33-1.939-4.33-4.33 0-2.394 1.938-4.333 4.33-4.333 2.393 0 4.332 1.94 4.332 4.332" transform="translate(18 10) translate(21 8.668)"/>
+                <path stroke="#131313" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.233 17.913c0 2.392-1.939 4.331-4.332 4.331-2.392 0-4.33-1.939-4.33-4.33 0-2.394 1.938-4.333 4.33-4.333 2.393 0 4.332 1.94 4.332 4.332z" transform="translate(18 10) translate(21 8.668)"/>
+                <g>
+                    <path fill="#5FCECB" d="M0.902 2.074L0.902 0.522" transform="translate(18 10) translate(21 8.668) translate(8 6)"/>
+                    <path stroke="#131313" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M0.902 2.074L0.902 0.522" transform="translate(18 10) translate(21 8.668) translate(8 6)"/>
+                </g>
+                <g>
+                    <path fill="#5FCECB" d="M0.799 2.095L0.799 0.752" transform="translate(18 10) translate(21 8.668) translate(8 27)"/>
+                    <path stroke="#131313" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M0.799 2.095L0.799 0.752" transform="translate(18 10) translate(21 8.668) translate(8 27)"/>
+                </g>
+                <path fill="#FF9EA5" d="M32.953 29.806c0 5.077-4.117 9.194-9.194 9.194-5.078 0-9.195-4.117-9.195-9.194 0-5.078 4.117-9.194 9.195-9.194 5.077 0 9.194 4.116 9.194 9.194" transform="translate(18 10) translate(21 8.668)"/>
+                <path stroke="#131313" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M32.953 29.806c0 5.077-4.117 9.194-9.194 9.194-5.078 0-9.195-4.117-9.195-9.194 0-5.078 4.117-9.194 9.195-9.194 5.077 0 9.194 4.116 9.194 9.194z" transform="translate(18 10) translate(21 8.668)"/>
+                <g>
+                    <path fill="#FFF" d="M1.136 6.157L8.381 6.157" transform="translate(18 10) translate(21 8.668) translate(20 29)"/>
+                    <path stroke="#131313" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M0.136 1.157L7.381 1.157" transform="translate(18 10) translate(21 8.668) translate(20 29)"/>
+                </g>
+                <g>
+                    <path fill="#FFF" d="M1.759 5.535L1.759 12.78" transform="translate(18 10) translate(21 8.668) translate(23 26)"/>
+                    <path stroke="#131313" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M0.759 0.534L0.759 7.779" transform="translate(18 10) translate(21 8.668) translate(23 26)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
